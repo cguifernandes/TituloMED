@@ -1,0 +1,68 @@
+.principal {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.principal h1 {
+    font-size: 20px;
+    color: #ffffff;
+    font-weight: bold;
+    padding-left: 95px;
+    margin: 25px 0px;
+}
+
+.substancia{ 
+    width: 40%;
+}
+
+.exercicios {
+    width: 60%;
+}
+
+.principal p {
+    font-size: 16px;
+    color: #ffffff;
+    padding-left: 95px;
+    padding-right: 95px;
+    padding-bottom: 10px;
+}
+
+.titulo {
+    font-size: 28px !important;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    text-align: center;
+    padding-left: 0px !important;
+}
+
+.exercicios div {
+    color: #fff;
+    padding-right: 95px;
+}
+
+.exercicio-1 {
+    width: 400px;
+    height: 300px;
+    margin-left: 15%;
+}
+
+.custom-shape-divider-top-1658081412 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    z-index: -10;
+}
+
+.custom-shape-divider-top-1658081412 svg {
+    position: relative;
+    display: block;
+    width: calc(136% + 210.3px);
+    height: 201px;
+}
+
+.custom-shape-divider-top-1658081412 .shape-fill {
+    fill: #19273A;
+}

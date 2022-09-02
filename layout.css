@@ -1,0 +1,95 @@
+﻿* {
+    font-family: "Microsoft YaHei";
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body {
+    background-color: #243b5a;
+}
+
+#imagem {
+    width: 230px;
+    bottom: 0.5%;
+    left: 4%;
+    position: absolute;
+}
+
+#next{
+    margin-left: 35px;
+    display: inline-block;
+}
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    background-image : linear-gradient(#3fa59c, #0b635b);
+    z-index: 5;
+    top: 0;
+    left: 0;
+    right: 15px;
+    overflow-x: hidden;
+    padding-top: 60px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+
+.sidebar a {
+    padding: 10px 8px 0px 32px;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-size: 20px;
+    color: #ffffff;
+    display: block;
+    transition: 0.3s;
+    cursor: pointer;
+    font-weight: 800;
+}
+
+.sidebar a:hover {
+    padding-left: 40px;
+    transition: 0.6s;
+}
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0   );
+    color: white;
+    padding: 10px 15px 0px 10px;
+    position: fixed;
+    box-sizing: border-box;
+    border: none;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 16px;
+    box-sizing: border-box;
+}
+
+@media screen and (max-height: 450px) {
+.sidebar {
+    padding-top: 15px;  
+}
+
+    .sidebar a {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 680px) {
+    .openbtn {
+        padding: 0px 0px;
+    }
+}
+

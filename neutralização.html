@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>TituloMED - Neutralização</title>
+        <meta charset="utf-8">
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <link rel="stylesheet" type="text/css" href="neutralização.css" media="screen" />
+        <link rel="stylesheet" type="text/css" href="layout.css" media="screen" />
+        <link rel="stylesheet" type="text/css" href="resposiveNeutralizacao.css" media="screen" />
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <link rel="icon" href="Imagens/logo.png" />
+    </head>
+    <body>
+        <div id="mySidebar" class="sidebar">
+            <a id="link" href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="neutralização.html" id="neutralizacao">Neutralização</a>
+                <div id="sidebar-secundario">
+                    <a onclick="DuvidaClickEl()">Dúvida</a>
+                    <a onclick="ReiniciarEl()">Reiniciar</a>
+                </div>
+            <a href="sobre.html">Sobre</a>
+            <a href="sobre.html">O que é?</a>
+            <img src="Imagens/icon.png" id="imagem" ></img>
+        </div>
+        <div id="main">
+            <button class="openbtn" onclick="openNav()">&#9776;</button>
+        </div>
+
+        <div id="video-container">
+            <video class="video" controls>
+                <source src="" type="video/mp4" />
+            </video>
+            <p class="p-video">Caso ainda tenha dúvida nós envie um e-mail em nossa página de <a href="sobre.html#contact">contato</a>, será um prazer te ouvir 😇.</p>
+        </div>
+
+        <div class="container">
+            <input id="input-Acido" class="input-Acido" type="text" name="categoria" placeholder="Ácidos" onfocus="Acidodropdown(0)" onblur="Acidodropdown(1)"/></div>
+            <i id="iAcido" class="fa-solid fa-angle-down"></i>
+            <div id="AcidodropDown" class="AcidodropDown">
+                <div class="AcidolistDropDown">
+                    <div class="Acidoitem" id="Acidoitem-1" onmousedown="Acidocategory(1)">Ácido Clorídrico - HCl</div>
+                    <div class="Acidoitem" id="Acidoitem-2" onmousedown="Acidocategory(2)">Ácido Sulfúrico - H₂SO₄</div>
+                    <div class="Acidoitem" id="Acidoitem-3" onmousedown="Acidocategory(3)">Ácido Nítrico - HNO₃</div>
+                    <div class="Acidoitem" id="Acidoitem-4" onmousedown="Acidocategory(4)">Ácido Fosfórico - H₃PO₄</div>
+                    <div class="Acidoitem" id="Acidoitem-5" onmousedown="Acidocategory(5)">Ácido Acético - CH₃COOH</div>
+                    <div class="Acidoitem" id="Acidoitem-6" onmousedown="Acidocategory(6)">Ácido Carbônico - H₂CO₃</div>
+                </div>
+            </div>
+            <input id="input-Base" class="input-Base" type="text" name="categoria" placeholder="Bases" onfocus="Basedropdown(0)" onblur="Basedropdown(1)"/></div>
+            <i id="iBase" class="fa-solid fa-angle-down"></i>
+            <div id="BasedropDown" class="BasedropDown">
+                <div class="BaselistDropDown">
+                    <div class="Baseitem" id="Baseitem-1" onmousedown="Basecategory(1)">Hidróxido de Sódio - NaOH</div>
+                    <div class="Baseitem" id="Baseitem-2" onmousedown="Basecategory(2)">Hidróxido de Potássio - KOH</div>
+                    <div class="Baseitem" id="Baseitem-3" onmousedown="Basecategory(3)">Hidróxido de Amônio - NH₄OH</div>
+                    <div class="Baseitem" id="Baseitem-4" onmousedown="Basecategory(4)">Hidróxido de Prata - AgOH</div>
+                    <div class="Baseitem" id="Baseitem-5" onmousedown="Basecategory(5)">Hidróxido de Magnésio - Mg(OH)₂</div>
+                    <div class="Baseitem" id="Baseitem-6" onmousedown="Basecategory(6)">Hidróxido de Cálcio - Ca(OH)₂</div>
+                </div>
+            </div>
+            <div id="principal">
+                <abbr title="Dúvida"><img onclick="DuvidaClickEl()" src="\Imagens\interrogacao.png" id="duvida-botao"></abbr>
+                <abbr title="Reiniciar"><img onclick="ReiniciarEl()" src="\Imagens\voltar.png" id="voltar"></abbr>
+                <abbr title="Titulação"><a id="a-titulacao" href="titulacao.html"><img src="/Imagens/titulacao.png" id="titulacao"></abbr></a>  
+                <img src="\Imagens\fase1.png" id="mesa">
+                <button onclick="criarVariavelAcidoEl()" id="btnAcido" class="btnAcido">Ácido</button>
+                <button onclick="criarVariavelBaseEl()" id="btnBase" class="btnBase">Base</button>
+                <abbr title="Mais"><button onclick="maisEl(true)" id="mais">+</button></abbr>
+                <p id="mol">0.1 mol/L</p>
+                <abbr title="Menos"><button onclick="maisEl(false)" id="menos">-</button></abbr>
+
+                <abbr title="Indicador"><button onclick="ClickIndicadorEl()" id="indicador">Indicador (Fenolftaleína)</button></abbr> 
+            </div>
+        </div>
+    </body>
+    <script type="text/javascript" src="neutralizacao.js"></script>
+</html> 

@@ -12,7 +12,7 @@ var btnAcidoEl = document.getElementById("btnAcido");
     function criarVariavelAcidoEl() {
         if (acido) {
             var fase2AcidoEl = document.createElement("img");   
-            fase2AcidoEl.src = "..../Imagens/fase2(acido).png";
+            fase2AcidoEl.src = "./Imagens/fase2(acido).png";
             fase2AcidoEl.id = "mesa";
 
             var divPrincipalEl = document.querySelector("#principal");
@@ -35,7 +35,7 @@ var btnBaseEl = document.getElementById("btnBase");
     function criarVariavelBaseEl() {
         if (base) {
             var fase2BaseEl = document.createElement("img");   
-            fase2BaseEl.src = "..../Imagens/fase2(base).png";
+            fase2BaseEl.src = "./Imagens/fase2(base).png";
             fase2BaseEl.id = "mesa";
 
             var divPrincipalEl = document.querySelector("#principal");
@@ -132,7 +132,7 @@ function ClickIndicadorEl() {
 
 
     if (!acido) {
-        fase2AcidoEl.src = "../Imagens/gif/indicador(acido).gif";
+        fase2AcidoEl.src = "./Imagens/gif/indicador(acido).gif";
 
         inputAcidoEl.disabled = true;
         iAcidoEl.disabled = true;
@@ -147,7 +147,7 @@ function ClickIndicadorEl() {
     } 
 
     else if (!base) {
-        fase2AcidoEl.src = "../Imagens/gif/indicador(base).gif";
+        fase2AcidoEl.src = "./Imagens/gif/indicador(base).gif";
 
         inputBaseEl.disabled = true;
         iBaseEl.disabled = true;
@@ -195,23 +195,23 @@ function Basecategory(id) {
     titulacaoEl.style.display = 'inline'
 
     if (id == 1) {
-        fase5El.src = "../Imagens/gif/base/fase5(naoh).gif";
+        fase5El.src = "./Imagens/gif/base/fase5(naoh).gif";
     }
     else if (id == 2) { 
-        fase5El.src = "../Imagens/gif/base/fase5(koh).gif";
+        fase5El.src = "./Imagens/gif/base/fase5(koh).gif";
     }
     else if (id == 3) { 
-        fase5El.src = "../Imagens/gif/base/fase5(nh4oh).gif";
+        fase5El.src = "./Imagens/gif/base/fase5(nh4oh).gif";
     }
     else if (id == 4) { 
-        fase5El.src = "../Imagens/gif/base/fase5(agoh).gif";
+        fase5El.src = "./Imagens/gif/base/fase5(agoh).gif";
     
     }
     else if (id == 5) { 
-        fase5El.src = "../Imagens/gif/base/fase5(mgoh2).gif";
+        fase5El.src = "./Imagens/gif/base/fase5(mgoh2).gif";
     }
     else if (id == 6) { 
-        fase5El.src = "../Imagens/gif/base/fase5(caoh).gif";
+        fase5El.src = "./Imagens/gif/base/fase5(caoh).gif";
     }
 }
 
@@ -232,22 +232,22 @@ function Acidocategory(id) {
     titulacaoEl.style.display = 'inline'
 
     if (id == 1) {
-        fase5El.src = "../Imagens/gif/acido/fase5(hcl).gif";
+        fase5El.src = "./Imagens/gif/acido/fase5(hcl).gif";
     }
     else if (id == 2) { 
-        fase5El.src = "../Imagens/gif/acido/fase5(h2so4).gif";
+        fase5El.src = "./Imagens/gif/acido/fase5(h2so4).gif";
     }
     else if (id == 3) { 
-        fase5El.src = "../Imagens/gif/acido/fase5(hno3).gif";
+        fase5El.src = "./Imagens/gif/acido/fase5(hno3).gif";
     }
     else if (id == 4) { 
-        fase5El.src = "../Imagens/gif/acido/fase5(h3po4).gif";
+        fase5El.src = "./Imagens/gif/acido/fase5(h3po4).gif";
     }
     else if (id == 5) { 
-        fase5El.src = "../Imagens/gif/acido/fase5(ch3cooh).gif";
+        fase5El.src = "./Imagens/gif/acido/fase5(ch3cooh).gif";
     }
     else if (id == 6) { 
-        fase5El.src = "../Imagens/gif/acido/fase5(h2co3).gif";
+        fase5El.src = "./Imagens/gif/acido/fase5(h2co3).gif";
     }
 }
 

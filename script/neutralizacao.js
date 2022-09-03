@@ -278,11 +278,11 @@ btnTitulacaoEl.addEventListener("click", (e) => {
     var itemAcido = document.getElementById('input-Acido').value.split("- ")[1]; 
     e.preventDefault();
     if (!acido) {
-        window.location = "./titulacao.html?substancia=" + itemAcido;
+        window.location = "./pages/titulacao.html?substancia=" + itemAcido;
     }
 
     else {
-        window.location = "./titulacao.html?substancia=" + itemBase;
+        window.location = "./pages/titulacao.html?substancia=" + itemBase;
     }
 })
 

@@ -78,7 +78,7 @@ MolEl.innerHTML = "0.1 mol/L"
         if (count == 30) {
             MolEl.innerHTML = "3.0 mol/L"
         }
-    return count;
+
 }
 //BOTAO VOLTAR
 function ReiniciarEl() {

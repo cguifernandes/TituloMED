@@ -13,51 +13,51 @@ function closeNav() {
 window.onload = function () {
     let path = window.location.href.split('=');
     if (path[1] == "NaOH") {
-        pSubstancia.innerHTML += "Hidróxido de Sódio - NaOH"
+        pSubstancia.innerHTML += "Hidróxido de Sódio - NaOH + Ácido Nítrico - HNO₃"
     }
 
     else if (path[1] == "KOH") {
-        pSubstancia.innerHTML += "Hidróxido de Potássio - KOH"
+        pSubstancia.innerHTML += "Hidróxido de Potássio - KOH + Ácido Nítrico - HNO₃"
     }
 
     else if (path[1] == "NH%E2%82%84OH") {
-        pSubstancia.innerHTML += "Hidróxido de Amônio - NH₄OH"
+        pSubstancia.innerHTML += "Hidróxido de Amônio - NH₄OH + Ácido Nítrico - HNO₃"
     }
     
     else if (path[1] == "AgOH") {
-        pSubstancia.innerHTML += "Hidróxido de Prata - AgOH"
+        pSubstancia.innerHTML += "Hidróxido de Prata - AgOH + Ácido Nítrico - HNO₃"
     }
 
     else if (path[1] == "Mg(OH)%E2%82%82") {
-        pSubstancia.innerHTML += "Hidróxido de Magnésio - Mg(OH)₂"
+        pSubstancia.innerHTML += "Hidróxido de Magnésio - Mg(OH)₂ + Ácido Nítrico - HNO₃"
     }
     
     else if (path[1] == "Ca(OH)%E2%82%82") {
-        pSubstancia.innerHTML += "Hidróxido de Cálcio - Ca(OH)₂"
+        pSubstancia.innerHTML += "Hidróxido de Cálcio - Ca(OH)₂ + Ácido Nítrico - HNO₃"
     }
 
     else if (path[1] == "HCl") {
-        pSubstancia.innerHTML += "Ácido Clorídrico - HCl"
+        pSubstancia.innerHTML += "Ácido Clorídrico - HCl + Hidróxido de Potássio - KOH"
     }
 
     else if (path[1] == "H%E2%82%82SO%E2%82%84") {
-        pSubstancia.innerHTML += "Ácido Sulfúrico - H₂SO₄"
+        pSubstancia.innerHTML += "H₂SO₄ + KOH -> "
     }
 
     else if (path[1] == "HNO%E2%82%83") {
-        pSubstancia.innerHTML += "Ácido Nítrico - HNO₃"
+        pSubstancia.innerHTML += "Ácido Nítrico - HNO₃ + Hidróxido de Potássio - KOH"
     }
 
     else if (path[1] == "H%E2%82%83PO%E2%82%84") {
-        pSubstancia.innerHTML += "Ácido Fosfórico - H₃PO₄"
+        pSubstancia.innerHTML += "Ácido Fosfórico - H₃PO₄ + Hidróxido de Potássio - KOH"
     }
 
     else if (path[1] == "CH%E2%82%83COOH") {
-        pSubstancia.innerHTML += "Ácido Acético - CH₃COOH"
+        pSubstancia.innerHTML += "Ácido Acético - CH₃COOH + Hidróxido de Potássio - KOH"
     }
     
     else if (path[1] == "H%E2%82%82CO%E2%82%83") {
-        pSubstancia.innerHTML += "Ácido Carbônico - H₂CO₃"
+        pSubstancia.innerHTML += "Ácido Carbônico - H₂CO₃ + Hidróxido de Potássio - KOH"
     }
 
     else {

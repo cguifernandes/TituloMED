@@ -7,32 +7,24 @@
     margin: 25px 0px;
 }
 
-#flex-nome {
-    display: flex;
-    align-items: center;
-    flex-wrap: nowrap;
-    font-size: 10px !important;
-    padding-bottom: 20px;
+#substancia {
+    padding-left: 248px;
+    font-size: 13px;
 }
 
-#analito {
-    padding-left: 315px !important;
+#grid-equacao {
+    display: grid;
+    grid-template-columns: 170px 100px 40px 50px 0px;
+    padding-left: 95px;
 }
 
-#titulante {
-    padding-left: 55px !important;
-}
-
-#sal {
-    padding-left: 10px !important;
-    padding-right: 0px !important;
+#analito, #titulante, p2, p4 {
+    color: #fff;
 }
 
 .principal p {
     font-size: 16px;
     color: #ffffff;
-    padding-left: 95px;
-    padding-right: 95px;
 }
 
 .titulo {

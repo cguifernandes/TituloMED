@@ -1,4 +1,7 @@
-var pSubstancia = document.querySelector("#p-substancia");
+var Analito = document.querySelector("#analito");
+var Titulante = document.querySelector("#titulante");
+var Substancia = document.querySelector("#substancia");
+var Grid = document.querySelector("#grid-equacao");
 
 function openNav() {
     document.getElementById("mySidebar").style.width = "250px";
@@ -13,54 +16,89 @@ function closeNav() {
 window.onload = function () {
     let path = window.location.href.split('=');
     if (path[1] == "NaOH") {
-        pSubstancia.innerHTML += "Hidróxido de Sódio - NaOH + Ácido Nítrico - HNO₃"
+        Analito.innerHTML += "NaOH"
+        Analito.style.paddingLeft = "20px"
+        Titulante.innerHTML += "HNO₃"
+        Substancia.innerHTML += "Hidróxido de Sódio + Ácido Nítrico -> "
     }
 
     else if (path[1] == "KOH") {
-        pSubstancia.innerHTML += "Hidróxido de Potássio - KOH + Ácido Nítrico - HNO₃"
+        Analito.innerHTML += "KOH"
+        Analito.style.paddingLeft = "30px"
+        Titulante.innerHTML += "HNO₃"
+        Substancia.innerHTML += "Hidróxido de Potássio + Ácido Nítrico -> "
     }
 
     else if (path[1] == "NH%E2%82%84OH") {
-        pSubstancia.innerHTML += "Hidróxido de Amônio - NH₄OH + Ácido Nítrico - HNO₃"
+        Analito.innerHTML += "NH₄OH"
+        Analito.style.paddingLeft = "30px"
+        Titulante.innerHTML += "HNO₃"
+        Substancia.innerHTML += "Hidróxido de Amônio + Ácido Nítrico -> "
     }
     
     else if (path[1] == "AgOH") {
-        pSubstancia.innerHTML += "Hidróxido de Prata - AgOH + Ácido Nítrico - HNO₃"
+        Analito.innerHTML += "AgOH"
+        Analito.style.paddingLeft = "30px"
+        Titulante.innerHTML += "HNO₃"
+        Substancia.innerHTML += "Hidróxido de Prata + Ácido Nítrico -> "
     }
 
     else if (path[1] == "Mg(OH)%E2%82%82") {
-        pSubstancia.innerHTML += "Hidróxido de Magnésio - Mg(OH)₂ + Ácido Nítrico - HNO₃"
+        Analito.innerHTML += "Mg(OH)₂"
+        Analito.style.paddingLeft = "10px"
+        Titulante.innerHTML += "HNO₃"
+        Substancia.innerHTML += "Hidróxido de Magnésio + Ácido Nítrico -> "
     }
     
     else if (path[1] == "Ca(OH)%E2%82%82") {
-        pSubstancia.innerHTML += "Hidróxido de Cálcio - Ca(OH)₂ + Ácido Nítrico - HNO₃"
+        Analito.innerHTML += "Ca(OH)₂"
+        Analito.style.paddingLeft = "10px"
+        Titulante.innerHTML += "HNO₃"
+        Substancia.innerHTML += "Hidróxido de Cálcio + Ácido Nítrico -> "
     }
 
     else if (path[1] == "HCl") {
-        pSubstancia.innerHTML += "Ácido Clorídrico - HCl + Hidróxido de Potássio - KOH"
+        Analito.innerHTML = "HCl"
+        Analito.style.paddingLeft = "30px"
+        Titulante.innerHTML = "HNO₃"
+        Substancia.innerHTML += "Ácido Clorídrico + Ácido Nítrico -> "
     }
 
     else if (path[1] == "H%E2%82%82SO%E2%82%84") {
-        pSubstancia.innerHTML += "H₂SO₄ + KOH -> "
+        Analito.innerHTML += "H₂SO₄"
+        Analito.style.paddingLeft = "20px"
+        Titulante.innerHTML += "KOH"
+        Substancia.innerHTML += "Ácido Sulfúrico + Ácido Nítrico -> "
     }
 
     else if (path[1] == "HNO%E2%82%83") {
-        pSubstancia.innerHTML += "Ácido Nítrico - HNO₃ + Hidróxido de Potássio - KOH"
+        Analito.innerHTML += "HNO₃"
+        Analito.style.paddingLeft = "20px"
+        Titulante.innerHTML += "KOH"
+        Substancia.innerHTML += "Ácido Nítrico + Ácido Nítrico -> "
     }
 
     else if (path[1] == "H%E2%82%83PO%E2%82%84") {
-        pSubstancia.innerHTML += "Ácido Fosfórico - H₃PO₄ + Hidróxido de Potássio - KOH"
+        Analito.innerHTML += "H₃PO₄"
+        Analito.style.paddingLeft = "20px"
+        Titulante.innerHTML += "KOH"
+        Substancia.innerHTML += "Ácido Fosfórico + Ácido Nítrico -> "
     }
 
     else if (path[1] == "CH%E2%82%83COOH") {
-        pSubstancia.innerHTML += "Ácido Acético - CH₃COOH + Hidróxido de Potássio - KOH"
+        Analito.innerHTML += "CH₃COOH"
+        Titulante.innerHTML += "KOH"
+        Substancia.innerHTML += "Ácido Acético + Ácido Nítrico -> "
     }
     
     else if (path[1] == "H%E2%82%82CO%E2%82%83") {
-        pSubstancia.innerHTML += "Ácido Carbônico - H₂CO₃ + Hidróxido de Potássio - KOH"
+        Analito.innerHTML += "H₂CO₃"
+        Analito.style.paddingLeft = "20px"
+        Titulante.innerHTML += "KOH"
+        Substancia.innerHTML += "Ácido Carbônico + Ácido Nítrico -> "
     }
 
     else {
-    pSubstancia.innerHTML += path[1]
+    Analito.innerHTML += path[1]
     }
 }

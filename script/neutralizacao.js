@@ -134,13 +134,13 @@ function ClickIndicadorEl() {
     if (!acido) {
         fase2AcidoEl.src = "./Imagens/gif/indicador(acido).gif";
 
-        inputAcidoEl.disabled = true;
-        iAcidoEl.disabled = true;
+        // inputAcidoEl.disabled = true;
+        // iAcidoEl.disabled = true;
 
-        setTimeout(function() {
-            inputAcidoEl.disabled = false;
-            iAcidoEl.disabled = false;
-            }, 2580);
+        // setTimeout(function() {
+        //     inputAcidoEl.disabled = false;
+        //     iAcidoEl.disabled = false;
+        //     }, 2580);
 
         inputAcidoEl.style.display = 'block';
         iAcidoEl.style.display = 'inline';
@@ -149,13 +149,13 @@ function ClickIndicadorEl() {
     else if (!base) {
         fase2AcidoEl.src = "./Imagens/gif/indicador(base).gif";
 
-        inputBaseEl.disabled = true;
-        iBaseEl.disabled = true;
+        // inputBaseEl.disabled = true;
+        // iBaseEl.disabled = true;
 
-        setTimeout(function() {
-            inputBaseEl.disabled = false;
-            iBaseEl.disabled = false;
-            }, 2580);
+        // setTimeout(function() {
+        //     inputBaseEl.disabled = false;
+        //     iBaseEl.disabled = false;
+        //     }, 2580);
 
         inputBaseEl.style.display = 'block';
         iBaseEl.style.display = 'inline';

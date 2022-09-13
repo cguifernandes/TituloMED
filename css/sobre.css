@@ -1,8 +1,6 @@
 ﻿* {
     scroll-behavior: smooth;
     overflow-x: hidden;
-    margin: 0px;
-    padding: 0px;
 }
 
 .principal {
@@ -12,6 +10,10 @@
 
 .sobre {
     width: 70%;
+}
+
+.titulo-sobre {
+    padding-left: 95px;
 }
 
 .contato {
@@ -26,6 +28,8 @@
     color: #ffffff;
     padding-left: 95px;
     padding-bottom: 10px;
+    text-align: justify;
+    padding-right: 15px;
 }
 
 .titulo {

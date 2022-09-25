@@ -15,7 +15,7 @@ var btnAcidoEl = document.getElementById("btnAcido");
             fase2AcidoEl.src = "./Imagens/fase2(acido).png";
             fase2AcidoEl.id = "mesa";
 
-            var divPrincipalEl = document.querySelector("#principal");
+            var divPrincipalEl = document.querySelector("#container");
             var fase1El = divPrincipalEl.querySelector("#mesa");
             divPrincipalEl.replaceChild(fase2AcidoEl, fase1El);
         }
@@ -38,7 +38,7 @@ var btnBaseEl = document.getElementById("btnBase");
             fase2BaseEl.src = "./Imagens/fase2(base).png";
             fase2BaseEl.id = "mesa";
 
-            var divPrincipalEl = document.querySelector("#principal");
+            var divPrincipalEl = document.querySelector("#container");
             var fase1El = divPrincipalEl.querySelector("#mesa");
             divPrincipalEl.replaceChild(fase2BaseEl, fase1El);
         }
@@ -111,158 +111,126 @@ swal({
 }
 
 //INDICADOR
-var inputAcidoEl = document.getElementById("input-Acido");
-var iAcidoEl = document.getElementById("iAcido");
-var dropDownAcidoEl = document.getElementById("AcidodropDown");
-
-var inputBaseEl = document.getElementById("input-Base");
-var iBaseEl = document.getElementById("iBase");
-var dropDownBaseEl = document.getElementById("BasedropDown");
-
 function ClickIndicadorEl() {
+    var cmbAcido = document.getElementById("cmbAcido");
+    var cmbBase = document.getElementById("cmbBase");
     var fase2AcidoEl = document.createElement("img");   
     fase2AcidoEl.id = "mesa";
 
-    var divPrincipalEl = document.querySelector("#principal");
+    var divPrincipalEl = document.querySelector("#container");
     var fase1El = divPrincipalEl.querySelector("#mesa");
     divPrincipalEl.replaceChild(fase2AcidoEl, fase1El);
 
-    dropDownBaseEl.style.display = 'none';
     IndicadorEl.style.display = 'none';
 
 
     if (!acido) {
+        cmbAcido.style.display = 'inline';
         fase2AcidoEl.src = "./Imagens/gif/indicador(acido).gif";
-
-        inputAcidoEl.disabled = true;
-        iAcidoEl.disabled = true;
+        cmbAcido.disabled = true;
+        cmbAcido.style.cursor = 'auto';
 
         setTimeout(function() {
-            inputAcidoEl.disabled = false;
-            iAcidoEl.disabled = false;
-            }, 2580);
-
-        inputAcidoEl.style.display = 'block';
-        iAcidoEl.style.display = 'inline';
+            cmbAcido.disabled = false;
+            cmbAcido.style.cursor = 'pointer';
+        }, 2590);
     } 
 
     else if (!base) {
+        cmbBase.style.display = 'inline';
         fase2AcidoEl.src = "./Imagens/gif/indicador(base).gif";
-
-        inputBaseEl.disabled = true;
-        iBaseEl.disabled = true;
+        cmbBase.disabled = true;
+        cmbBase.style.cursor = 'auto';
 
         setTimeout(function() {
-            inputBaseEl.disabled = false;
-            iBaseEl.disabled = false;
-            }, 2580);
-
-        inputBaseEl.style.display = 'block';
-        iBaseEl.style.display = 'inline';
+            cmbBase.disabled = false;
+            cmbBase.style.cursor = 'pointer';
+        }, 2590);
     }
 }
 
 //COMBO BOX
+var selectBase = document.getElementById('cmbBase')
+var selectAcido = document.getElementById('cmbAcido')
 var titulacaoEl = document.querySelector("#titulacao");
 var fase5El = document.createElement("img"); 
 
-function itemEl(id) {
-    if (!acido) {
-        var item = document.getElementById('Acidoitem-' + id).innerHTML;
-        document.getElementById('input-Acido').value = item;
-    }
+selectBase.addEventListener('change', function(){
+})
+selectAcido.addEventListener('change', function(){
+})
 
-    else {
-        var item = document.getElementById('Baseitem-' + id).innerHTML;
-        document.getElementById('input-Base').value = item; 
-    }
-}
-
-function Basedropdown(p) {
-    var e = document.getElementsByClassName('BasedropDown')[0];
-    var d = ['block', 'none'];
-    e.style.display = d[p];
-}
-
-function Basecategory(id) { 
-
-    itemEl(id);
-
-    fase5El.id = "mesa";
-    var divPrincipalEl = document.querySelector("#principal");
-    var fase1El = divPrincipalEl.querySelector("#mesa");
-    divPrincipalEl.replaceChild(fase5El, fase1El);
+function valorBase(selectBase) {
     titulacaoEl.style.display = 'inline'
 
-    if (id == 1) {
+    fase5El.id = "mesa";
+    var divPrincipalEl = document.querySelector("#container");
+    var fase1El = divPrincipalEl.querySelector("#mesa");
+    divPrincipalEl.replaceChild(fase5El, fase1El);
+
+    if (selectBase.value == "NaOH") {
         fase5El.src = "./Imagens/gif/base/fase5(naoh).gif";
     }
-    else if (id == 2) { 
+
+    else if (selectBase.value == "KOH") {
         fase5El.src = "./Imagens/gif/base/fase5(koh).gif";
     }
-    else if (id == 3) { 
+
+    else if (selectBase.value == "NH₄OH") {
         fase5El.src = "./Imagens/gif/base/fase5(nh4oh).gif";
     }
-    else if (id == 4) { 
+
+    else if (selectBase.value == "AgOH") {
         fase5El.src = "./Imagens/gif/base/fase5(agoh).gif";
-    
     }
-    else if (id == 5) { 
+
+    else if (selectBase.value == "Mg(OH)₂") {
         fase5El.src = "./Imagens/gif/base/fase5(mgoh2).gif";
     }
-    else if (id == 6) { 
+
+    else if (selectBase.value == "Ca(OH)₂") {
         fase5El.src = "./Imagens/gif/base/fase5(caoh).gif";
     }
 }
 
-function Acidodropdown(p) {
-    var e = document.getElementsByClassName('AcidodropDown')[0];
-    var d = ['block', 'none'];
-    e.style.display = d[p];
-}
-
-function Acidocategory(id) {
-
-    itemEl(id);
-
-    fase5El.id = "mesa";
-    var divPrincipalEl = document.querySelector("#principal");
-    var fase1El = divPrincipalEl.querySelector("#mesa");
-    divPrincipalEl.replaceChild(fase5El, fase1El);
+function valorAcido(selectAcido) {
     titulacaoEl.style.display = 'inline'
 
-    if (id == 1) {
+    fase5El.id = "mesa";
+    var divPrincipalEl = document.querySelector("#container");
+    var fase1El = divPrincipalEl.querySelector("#mesa");
+    divPrincipalEl.replaceChild(fase5El, fase1El);
+
+    if (selectAcido.value == "HCl") {
         fase5El.src = "./Imagens/gif/acido/fase5(hcl).gif";
     }
-    else if (id == 2) { 
+
+    else if (selectAcido.value == "H₂SO₄") {
         fase5El.src = "./Imagens/gif/acido/fase5(h2so4).gif";
     }
-    else if (id == 3) { 
+
+    else if (selectAcido.value == "HNO₃") {
         fase5El.src = "./Imagens/gif/acido/fase5(hno3).gif";
     }
-    else if (id == 4) { 
+
+    else if (selectAcido.value == "H₃PO₄") {
         fase5El.src = "./Imagens/gif/acido/fase5(h3po4).gif";
     }
-    else if (id == 5) { 
+
+    else if (selectAcido.value == "CH₃COOH") {
         fase5El.src = "./Imagens/gif/acido/fase5(ch3cooh).gif";
     }
-    else if (id == 6) { 
+
+    else if (selectAcido.value == "H₂CO₃") {
         fase5El.src = "./Imagens/gif/acido/fase5(h2co3).gif";
     }
 }
 
-//reload do valor do input 
-
-window.onload = function () {
-    document.getElementById('input-Acido').value = ""
-    document.getElementById('input-Base').value = ""
-}
-        
 //MOBILE
 const image = new Image(150, 150);
-var DuvidaBotaoEl = document.querySelector("#duvida-botao");
-var VoltarBotaoEl = document.querySelector("#voltar");
-var divPrincipalEl = document.querySelector("#mesa");
+var DuvidaBotao = document.querySelector("#duvida-botao");
+var VoltarBotao = document.querySelector("#voltar");
+var divPrincipal = document.querySelector("#mesa");
 image.src = 'https://piskel-imgstore-b.appspot.com/img/0f7c2d94-1117-11ed-9d47-dbfcb947f1e7.gif';
     if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
         swal({
@@ -271,18 +239,25 @@ image.src = 'https://piskel-imgstore-b.appspot.com/img/0f7c2d94-1117-11ed-9d47-d
             title: 'Por favor, vire o celular para melhor experência no programa!',
             });
     }
+
 //exportar variaeval
-var btnTitulacaoEl = document.querySelector('#a-titulacao');
-btnTitulacaoEl.addEventListener("click", (e) => {
-    var itemBase = document.getElementById('input-Base').value.split("- ")[1]; 
-    var itemAcido = document.getElementById('input-Acido').value.split("- ")[1]; 
+var btnTitulacao = document.querySelector('#a-titulacao');
+btnTitulacao.addEventListener("click", (e) => {
     e.preventDefault();
+
+    var selectBase = document.getElementById('cmbBase')
+    var selectAcido = document.getElementById('cmbAcido')   
+    selectBase.addEventListener('change', function(){
+    })
+    selectAcido.addEventListener('change', function(){
+    })
+
     if (!acido) {
-        window.location = "./pages/titulacao.html?substancia=" + itemAcido;
+        window.location = "./pages/titulacao.html?substancia=" + selectAcido.value;
     }
 
     else {
-        window.location = "./pages/titulacao.html?substancia=" + itemBase;
+        window.location = "./pages/titulacao.html?substancia=" + selectBase.value;
     }
 })
 

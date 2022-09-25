@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>TituloMED - Neutralização</title>
+        <meta charset="utf-8">
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <link rel="stylesheet" type="text/css" href="./css/neutralizacao.css" media="screen" />
+        <link rel="stylesheet" type="text/css" href="./css/layout.css" media="screen" />
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+        <link rel="icon" href="./Imagens/logo.png" />
+    </head>
+    <body>
+        <div id="mySidebar" class="sidebar">
+            <a id="link" href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="index.html" id="neutralizacao">Neutralização</a>
+                <div id="sidebar-secundario">
+                    <a onclick="DuvidaClickEl()">Dúvida</a>
+                    <a onclick="ReiniciarEl()">Reiniciar</a>
+                </div>
+            <a href="./pages/sobre.html">Sobre</a>
+            <img src="./Imagens/icon.png" id="imagem" ></img>
+        </div>
+        <div id="main">
+            <button class="openbtn" onclick="openNav()">&#9776;</button>
+        </div>
+
+        <div id="video-container">
+            <video class="video" controls>
+                <source src="" type="video/mp4" />
+            </video>
+            <p class="p-video">Caso ainda tenha dúvida nós envie um e-mail em nossa página de <a href="sobre.html#contact">contato</a>, será um prazer te ouvir 😇.</p>
+        </div>
+
+        <div id="principal">
+            <div id="container">
+                <img src="./Imagens/fase1.png" id="mesa">
+                <button onclick="criarVariavelAcidoEl()" id="btnAcido" class="btnAcido">Ácido</button>
+                <button onclick="criarVariavelBaseEl()" id="btnBase" class="btnBase">Base</button>
+                <img onclick="DuvidaClickEl()" src="./Imagens/interrogacao.png" id="duvida-botao">
+                <img onclick="ReiniciarEl()" src="./Imagens/voltar.png" id="voltar">
+                <a id="a-titulacao" href="./pages/titulacao.html"><img src="./Imagens/titulacao.png" id="titulacao"></a>
+                <div class="principal-mol">
+                    <button onclick="maisEl(true)" id="mais">+</button>
+                    <p id="mol">0.1 mol/L</p>
+                    <button onclick="maisEl(false)" id="menos">-</button>
+                </div>
+                <button onclick="ClickIndicadorEl()" id="indicador">Indicador (Fenolftaleína)</button>  
+                <select id="cmbAcido" onchange="valorAcido(selectAcido)">
+                    <option value="0" disabled selected hidden>Selecione...</option>
+                    <option value="HCl">Ácido Clorídrico - HCl</option>
+                    <option value="H₂SO₄">Ácido Sulfúrico - H₂SO₄</option>
+                    <option value="HNO₃">Ácido Nítrico - HNO₃</option>
+                    <option value="H₃PO₄">Ácido Fosfórico - H₃PO₄</option>
+                    <option value="CH₃COOH">Ácido Acético - CH₃COOH</option>
+                    <option value="H₂CO₃">Ácido Carbônico - H₂CO₃</option>
+                </select>
+                <select id="cmbBase" onchange="valorBase(selectBase)">
+                    <option value="0" disabled selected hidden>Selecione...</option>
+                    <option value="NaOH">Hidróxido de Sódio - NaOH</option>
+                    <option value="KOH">Hidróxido de Potássio - KOH</option>
+                    <option value="NH₄OH">Hidróxido de Amônio - NH₄OH</option>
+                    <option value="AgOH">Hidróxido de Prata - AgOH</option>
+                    <option value="Mg(OH)₂">Hidróxido de Magnésio - Mg(OH)₂</option>
+                    <option value="Ca(OH)₂">Hidróxido de Cálcio - Ca(OH)₂</option>
+                </select>
+            </div>
+        </div>
+        
+    </body>
+    <script type="text/javascript" src="./script/neutralizacao.js"></script>
+</html> 

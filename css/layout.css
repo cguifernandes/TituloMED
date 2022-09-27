@@ -93,5 +93,10 @@ body {
     .openbtn {
         padding: 0px 0px;
     }
+
+    #imagem {
+        width: 180px;
+        left: 11%;
+    }
 }
 

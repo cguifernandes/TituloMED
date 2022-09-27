@@ -1,0 +1,194 @@
+@media (max-width: 1120px) {
+    #container {
+        width: 820px;
+        height: 600px;
+    }
+
+    #mesa {
+        width: 820px;
+    }
+
+    #btnAcido {
+        left: 105px;
+        top: 188px;
+    }
+
+    #btnBase{
+        left: 12px;
+        top: 347px;
+    }
+
+    .principal-mol {
+        left: 643px;
+        top: 141px;
+    }
+}
+
+@media (max-width: 920px) {
+    #container {
+        width: 730px;
+        height: 600px;
+    }
+
+    #mesa {
+        width: 720px;
+    }
+
+    #btnAcido {
+        left: 99px;
+        top: 244px;
+        width: 75px;
+        height: 55px;
+        font-size: 14px;
+    }
+
+    #btnBase{
+        left: 20px;
+        top: 369px;
+        width: 75px;
+        height: 55px;
+        font-size: 14px;
+    }
+
+    #indicador {
+        left: 10px;
+        width: 125px;
+        height: 65px;
+        font-size: 14px;
+    }
+
+    #mol {
+        font-size: 12px;
+    }
+
+    #mais, #menos {
+        font-size: 14px;
+        width: 40px;
+        height: 40px;
+    }
+
+    #container select {
+        font-size: 13px;
+        width: 250px;
+        bottom: 120px;
+    }
+
+    .principal-mol {
+        left: 555px;
+        top: 181px;
+    }
+}
+
+@media (max-width: 820px) {
+    #duvida-botao, #voltar {
+        height: 38px;
+        width: 38px;
+    }
+
+    #container {
+        width: 660px;
+        height: 600px;
+    }
+
+    #mesa {
+        width: 640px;
+    }
+
+    #btnAcido {
+        left: 82px;
+        top: 278px;
+        height: 50px;
+    }
+
+    #btnBase {
+        left: 2px;
+        top: 398px;
+        height: 50px;
+    }
+
+    #indicador {
+        bottom: 60px;
+    }
+
+    #mol {
+        font-size: 12px;
+    }
+
+    #container select {
+        font-size: 12px;
+        width: 230px;
+        height: 35px;
+        bottom: 60px;
+    }
+
+    .principal-mol {
+        left: 485px;
+        top: 213px;
+    }
+}
+
+@media (max-width: 725px) {
+    #duvida-botao, #voltar {
+        display: none;
+    }
+
+    #container {
+        width: 550px;
+        height: 600px;
+    }
+
+    #mesa {
+        width: 550px;
+    }
+
+    #btnAcido {
+        left: 71px;
+        top: 320px;
+        height: 45px;
+        width: 65px;
+        font-size: 12px;
+    }
+
+    #btnBase {
+        left: 2px;
+        top: 428px;
+        height: 45px;
+        width: 65px;
+        font-size: 12px;
+    }
+
+    #indicador {
+        bottom: 0px;
+        height: 55px;
+        width: 105px;
+        font-size: 12px;
+    }
+
+    #mol {
+        font-size: 12px;
+    }
+
+    #container select {
+        font-size: 12px;
+        width: 230px;
+        height: 35px;
+        bottom: 60px;
+    }
+
+    .principal-mol {
+        left: 407px;
+        top: 249px;
+    }
+
+    #menos {
+        left: 70px;
+    }
+
+    #mais {
+        left: 70px;
+    }
+
+    #mol {
+        font-size: 10px;
+    }
+}

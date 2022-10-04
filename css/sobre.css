@@ -1,6 +1,5 @@
 ﻿* {
-    scroll-behavior: smooth;
-    overflow-x: hidden;
+    overflow-y: scroll !important;
 }
 
 .principal {

@@ -19,7 +19,7 @@
     }
 
     .principal-mol {
-        left: 643px;
+        left: 598px;
         top: 141px;
     }
 }
@@ -57,7 +57,7 @@
         font-size: 14px;
     }
 
-    #mol {
+    #mol, #concentracao {
         font-size: 12px;
     }
 
@@ -65,6 +65,7 @@
         font-size: 14px;
         width: 40px;
         height: 40px;
+        left: 160px;
     }
 
     #container select {
@@ -74,7 +75,7 @@
     }
 
     .principal-mol {
-        left: 555px;
+        left: 523px;
         top: 181px;
     }
 }
@@ -110,8 +111,12 @@
         bottom: 60px;
     }
 
-    #mol {
+    #mol, #concentracao {
         font-size: 12px;
+    }
+    
+    #mais, #menos {
+        left: 150px;
     }
 
     #container select {
@@ -122,7 +127,7 @@
     }
 
     .principal-mol {
-        left: 485px;
+        left: 465px;
         top: 213px;
     }
 }
@@ -164,7 +169,7 @@
         font-size: 12px;
     }
 
-    #mol {
+    #mol, #concentracao {
         font-size: 12px;
     }
 
@@ -176,16 +181,13 @@
     }
 
     .principal-mol {
-        left: 407px;
+        left: 400px;
         top: 249px;
+        width: 180px;
     }
 
-    #menos {
-        left: 70px;
-    }
-
-    #mais {
-        left: 70px;
+    #menos, #mais {
+        left: 105px;
     }
 
     #mol {

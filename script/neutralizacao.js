@@ -3,6 +3,7 @@ var MaisEl = document.getElementById("mais");
 var MenosEl = document.getElementById("menos");
 var MolEl = document.getElementById("mol");
 var IndicadorEl = document.getElementById("indicador");
+var ConcentracaoEl = document.getElementById("concentracao");
 
 var acido = true
 var base = true 
@@ -26,6 +27,7 @@ var btnAcidoEl = document.getElementById("btnAcido");
     MenosEl.style.display = 'inline';
     MolEl.style.display = 'inline';
     IndicadorEl.style.display = 'inline';
+    ConcentracaoEl.style.display = 'inline';
 
     acido = false
 }
@@ -49,6 +51,7 @@ var btnBaseEl = document.getElementById("btnBase");
     MenosEl.style.display = 'inline';
     MolEl.style.display = 'inline';
     IndicadorEl.style.display = 'inline';
+    ConcentracaoEl.style.display = 'inline';
 
     base = false
 }
@@ -238,6 +241,7 @@ image.src = 'https://piskel-imgstore-b.appspot.com/img/0f7c2d94-1117-11ed-9d47-d
             className: "mobile-alert",
             title: 'Por favor, vire o celular para melhor experência no programa!',
             });
+        
     }
 
 //exportar variaeval

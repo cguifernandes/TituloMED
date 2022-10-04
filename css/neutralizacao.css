@@ -1,11 +1,4 @@
-﻿* {
-    overflow: hidden;
-    overflow-x: hidden;
-    padding: 0px;
-    margin: 0px;
-}
-
-body {
+﻿body {
     min-height: 100vh;
 }
 
@@ -59,9 +52,9 @@ body {
 
 .principal-mol {
     position: relative;
-    width: 180px;
+    width: 220px;
     height: 240px;
-    left: 730px;
+    left: 668px;
     top: 170px;
 }
 
@@ -158,7 +151,7 @@ input::-moz-placeholder{
     border-radius: 3px;
     color: white;
     font-size: 17px;
-    left: 130px;
+    left: 170px;
     top: 59px;
     width: 42px;
     height: 42px;
@@ -176,9 +169,19 @@ input::-moz-placeholder{
     font-size: 17px;
     width: 42px;
     height: 42px;
-    left: 130px;
+    left: 170px;    
     top: 149px;
     z-index: 2;
+    display: none;
+}
+
+#concentracao {
+    position: relative;
+    color: white;
+    font-weight: 400;
+    font-size: 14px;
+    left: 4px;
+    top: 111px;
     display: none;
 }
 
@@ -186,8 +189,8 @@ input::-moz-placeholder{
     position: relative;
     color: white;
     font-weight: 400;
-    font-size: 15px;
-    left: 75px;
+    font-size: 14px;
+    left: 7px;
     top: 111px;
     display: none;
 }

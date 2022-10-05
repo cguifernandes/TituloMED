@@ -1,7 +1,8 @@
 var Analito = document.querySelector("#analito");
 var Titulante = document.querySelector("#titulante");
 var Substancia = document.querySelector("#substancia");
-var Grid = document.querySelector("#grid-equacao");
+var GridTitulante = document.querySelector("#grid-titulante");
+var Titulante2 = document.querySelector("#titulante2");
 
 function openNav() {
     document.getElementById("mySidebar").style.width = "250px";
@@ -24,21 +25,27 @@ window.onload = function () {
 
     else if (path[1] == "KOH") {
         Analito.innerHTML += "KOH"
+        GridTitulante.style.paddingLeft = "288px";
         Analito.style.paddingLeft = "30px"
+        Titulante2.style.paddingLeft = "7px"
         Titulante.innerHTML += "HNO₃"
         Substancia.innerHTML += "Hidróxido de Potássio + Ácido Nítrico -> "
     }
 
     else if (path[1] == "NH%E2%82%84OH") {
         Analito.innerHTML += "NH₄OH"
+        GridTitulante.style.paddingLeft = "298px";
         Analito.style.paddingLeft = "30px"
+        Titulante2.style.paddingLeft = "0px"
         Titulante.innerHTML += "HNO₃"
         Substancia.innerHTML += "Hidróxido de Amônio + Ácido Nítrico -> "
     }
     
     else if (path[1] == "AgOH") {
         Analito.innerHTML += "AgOH"
+        GridTitulante.style.paddingLeft = "298px";
         Analito.style.paddingLeft = "30px"
+        Titulante2.style.paddingLeft = "0px"
         Titulante.innerHTML += "HNO₃"
         Substancia.innerHTML += "Hidróxido de Prata + Ácido Nítrico -> "
     }
@@ -46,6 +53,7 @@ window.onload = function () {
     else if (path[1] == "Mg(OH)%E2%82%82") {
         Analito.innerHTML += "Mg(OH)₂"
         Analito.style.paddingLeft = "10px"
+        Titulante2.style.paddingLeft = "16px"
         Titulante.innerHTML += "HNO₃"
         Substancia.innerHTML += "Hidróxido de Magnésio + Ácido Nítrico -> "
     }
@@ -53,14 +61,16 @@ window.onload = function () {
     else if (path[1] == "Ca(OH)%E2%82%82") {
         Analito.innerHTML += "Ca(OH)₂"
         Analito.style.paddingLeft = "10px"
+        Titulante2.style.paddingLeft = "16px"
         Titulante.innerHTML += "HNO₃"
         Substancia.innerHTML += "Hidróxido de Cálcio + Ácido Nítrico -> "
     }
 
     else if (path[1] == "HCl") {
         Analito.innerHTML = "HCl"
-        Analito.style.paddingLeft = "30px"
-        Titulante.innerHTML = "HNO₃"
+        GridTitulante.style.paddingLeft = "283px";
+        Analito.style.paddingLeft = "30px";
+        Titulante.innerHTML = "HNO₃";
         Substancia.innerHTML += "Ácido Clorídrico + Ácido Nítrico -> "
     }
 

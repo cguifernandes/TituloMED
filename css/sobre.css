@@ -1,8 +1,4 @@
-﻿* {
-    overflow-y: scroll !important;
-}
-
-.principal {
+﻿.principal {
     display: flex;
     flex-wrap: nowrap;
 }

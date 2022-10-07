@@ -1,3 +1,66 @@
+@media (max-height: 720px) {
+    #container {
+        bottom: -85px;
+    }
+}
+ 
+@media (max-height: 720px) and (max-width: 1200px) {
+    #container {
+        width: 720px;
+        height: 600px;
+        bottom: -50px;
+    }
+
+    #mesa {
+        width: 720px;
+    }
+
+    #btnAcido {
+        left: 87px;
+        top: 238px;
+        height: 55px;
+        font-size: 14px;
+    }
+
+    #btnBase{
+        left: -12px;
+        top: 373px;
+        height: 55px;
+        font-size: 14px;
+    }
+
+    #indicador {
+        bottom: 120px;
+        font-size: 14px;
+        height: 70px;
+        width: 120px;
+    }
+
+    .principal-mol {
+        left: 520px;
+        top: 180px;
+    }
+
+    #concentracao {
+        font-size: 12px;
+    }
+    
+    #mol {
+        font-size: 12px;
+    }
+
+    #mais, #menos {
+        left: 140px;
+        font-size: 12px;
+        width: 40px;
+        height: 40px;
+    } 
+
+    #container select {
+        bottom: 120px;
+        width: 250px;
+    }
+}
 @media (max-width: 1120px) {
     #container {
         width: 820px;
@@ -88,7 +151,7 @@
 
     #container {
         width: 660px;
-        height: 600px;
+        height: 600px;    
     }
 
     #mesa {

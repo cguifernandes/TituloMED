@@ -130,25 +130,25 @@ function ClickIndicadorEl() {
     if (!acido) {
         cmbAcido.style.display = 'inline';
         fase2AcidoEl.src = "./Imagens/gif/indicador(acido).gif";
-        // cmbAcido.disabled = true;
+        cmbAcido.disabled = true;
         cmbAcido.style.cursor = 'auto';
 
-        // setTimeout(function() {
-        //     cmbAcido.disabled = false;
-        //     cmbAcido.style.cursor = 'pointer';
-        // }, 2590);
+        setTimeout(function() {
+            cmbAcido.disabled = false;
+            cmbAcido.style.cursor = 'pointer';
+        }, 2590);
     } 
 
     else if (!base) {
         cmbBase.style.display = 'inline';
         fase2AcidoEl.src = "./Imagens/gif/indicador(base).gif";
-        // cmbBase.disabled = true;
+        cmbBase.disabled = true;
         cmbBase.style.cursor = 'auto';
 
-        // setTimeout(function() {
-        //     cmbBase.disabled = false;
-        //     cmbBase.style.cursor = 'pointer';
-        // }, 2590);
+        setTimeout(function() {
+            cmbBase.disabled = false;
+            cmbBase.style.cursor = 'pointer';
+        }, 2590);
     }
 }
 

@@ -13,12 +13,18 @@ var btnAcidoEl = document.getElementById("btnAcido");
     function criarVariavelAcidoEl() {
         if (acido) {
             var fase2AcidoEl = document.createElement("img");   
-            fase2AcidoEl.src = "./Imagens/fase2(acido).png";
-            fase2AcidoEl.id = "mesa";
-
             var divPrincipalEl = document.querySelector("#container");
             var fase1El = divPrincipalEl.querySelector("#mesa");
             divPrincipalEl.replaceChild(fase2AcidoEl, fase1El);
+            fase2AcidoEl.id = "mesa";
+
+            if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+                fase2AcidoEl.src = "./Imagens/mobile/fase2(acido).png";
+            }
+
+            else {
+                fase2AcidoEl.src = "./Imagens/fase2(acido).png";
+            }
         }
 
     btnAcidoEl.style.display = 'none';
@@ -36,13 +42,19 @@ var btnBaseEl = document.getElementById("btnBase");
 
     function criarVariavelBaseEl() {
         if (base) {
-            var fase2BaseEl = document.createElement("img");   
-            fase2BaseEl.src = "./Imagens/fase2(base).png";
-            fase2BaseEl.id = "mesa";
-
+            var fase2AcidoEl = document.createElement("img");   
             var divPrincipalEl = document.querySelector("#container");
             var fase1El = divPrincipalEl.querySelector("#mesa");
-            divPrincipalEl.replaceChild(fase2BaseEl, fase1El);
+            divPrincipalEl.replaceChild(fase2AcidoEl, fase1El);
+            fase2AcidoEl.id = "mesa";
+
+            if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+                fase2AcidoEl.src = "./Imagens/mobile/fase2(base).png";
+            }
+
+            else {
+                fase2AcidoEl.src = "./Imagens/fase2(base).png";
+            }
         }
         
     btnAcidoEl.style.display = 'none';
@@ -125,30 +137,50 @@ function ClickIndicadorEl() {
     divPrincipalEl.replaceChild(fase2AcidoEl, fase1El);
 
     IndicadorEl.style.display = 'none';
-
+    IndicadorEl.style.visibility = ''
 
     if (!acido) {
         cmbAcido.style.display = 'inline';
-        fase2AcidoEl.src = "./Imagens/gif/indicador(acido).gif";
         cmbAcido.disabled = true;
         cmbAcido.style.cursor = 'auto';
 
-        setTimeout(function() {
-            cmbAcido.disabled = false;
-            cmbAcido.style.cursor = 'pointer';
-        }, 2590);
+        if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+            fase2AcidoEl.src = "./Imagens/mobile/gif/indicador(acido).gif";
+            setTimeout(function() {
+                cmbAcido.disabled = false;
+                cmbAcido.style.cursor = 'pointer';
+            }, 3090);
+        }
+
+        else {
+            fase2AcidoEl.src = "./Imagens/gif/indicador(acido).gif";
+            setTimeout(function() {
+                cmbAcido.disabled = false;
+                cmbAcido.style.cursor = 'pointer';
+            }, 2590);
+        }
     } 
 
     else if (!base) {
-        cmbBase.style.display = 'inline';
-        fase2AcidoEl.src = "./Imagens/gif/indicador(base).gif";
-        cmbBase.disabled = true;
-        cmbBase.style.cursor = 'auto';
+        cmbAcido.style.display = 'inline';
+        cmbAcido.disabled = true;
+        cmbAcido.style.cursor = 'auto';
 
-        setTimeout(function() {
-            cmbBase.disabled = false;
-            cmbBase.style.cursor = 'pointer';
-        }, 2590);
+        if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+            fase2AcidoEl.src = "./Imagens/mobile/gif/indicador(base).gif";
+            setTimeout(function() {
+                cmbAcido.disabled = false;
+                cmbAcido.style.cursor = 'pointer';
+            }, 3090);
+        }
+
+        else {
+            fase2AcidoEl.src = "./Imagens/gif/indicador(base).gif";
+            setTimeout(function() {
+                cmbAcido.disabled = false;
+                cmbAcido.style.cursor = 'pointer';
+            }, 2590);
+        }
     }
 }
 
@@ -166,66 +198,76 @@ selectAcido.addEventListener('change', function(){
 function valorBase(selectBase) {
     titulacaoEl.style.display = 'inline'
 
+    var mobile = ""
     fase5El.id = "mesa";
     var divPrincipalEl = document.querySelector("#container");
     var fase1El = divPrincipalEl.querySelector("#mesa");
     divPrincipalEl.replaceChild(fase5El, fase1El);
 
+    if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+        mobile = "mobile/"
+    }
+    
     if (selectBase.value == "NaOH") {
-        fase5El.src = "./Imagens/gif/base/fase5(naoh).gif";
+        fase5El.src = "./Imagens/" + mobile + "gif/base/fase5(naoh).gif";
     }
 
     else if (selectBase.value == "KOH") {
-        fase5El.src = "./Imagens/gif/base/fase5(koh).gif";
+        fase5El.src = "./Imagens/" + mobile + "gif/base/fase5(koh).gif";
     }
 
     else if (selectBase.value == "NH₄OH") {
-        fase5El.src = "./Imagens/gif/base/fase5(nh4oh).gif";
+        fase5El.src = "./Imagens/" + mobile + "gif/base/fase5(nh4oh).gif";
     }
 
     else if (selectBase.value == "AgOH") {
-        fase5El.src = "./Imagens/gif/base/fase5(agoh).gif";
+        fase5El.src = "./Imagens/" + mobile + "gif/base/fase5(agoh).gif";
     }
 
     else if (selectBase.value == "Mg(OH)₂") {
-        fase5El.src = "./Imagens/gif/base/fase5(mgoh2).gif";
+        fase5El.src = "./Imagens/" + mobile + "gif/base/fase5(mgoh2).gif";
     }
 
     else if (selectBase.value == "Ca(OH)₂") {
-        fase5El.src = "./Imagens/gif/base/fase5(caoh).gif";
+        fase5El.src = "./Imagens/" + mobile + "gif/base/fase5(caoh).gif";
     }
 }
 
 function valorAcido(selectAcido) {
     titulacaoEl.style.display = 'inline'
 
+    var mobile = ""
     fase5El.id = "mesa";
     var divPrincipalEl = document.querySelector("#container");
     var fase1El = divPrincipalEl.querySelector("#mesa");
     divPrincipalEl.replaceChild(fase5El, fase1El);
 
+    if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+        mobile = "mobile/"
+    }
+
     if (selectAcido.value == "HCl") {
-        fase5El.src = "./Imagens/gif/acido/fase5(hcl).gif";
+        fase5El.src = "./Imagens/" + mobile + "gif/acido/fase5(hcl).gif";
     }
 
     else if (selectAcido.value == "H₂SO₄") {
-        fase5El.src = "./Imagens/gif/acido/fase5(h2so4).gif";
+        fase5El.src = "./Imagens/" + mobile + "gif/acido/fase5(h2so4).gif";
     }
 
     else if (selectAcido.value == "HNO₃") {
-        fase5El.src = "./Imagens/gif/acido/fase5(hno3).gif";
+        fase5El.src = "./Imagens/" + mobile + "gif/acido/fase5(hno3).gif";
     }
 
     else if (selectAcido.value == "H₃PO₄") {
-        fase5El.src = "./Imagens/gif/acido/fase5(h3po4).gif";
+        fase5El.src = "./Imagens/" + mobile + "gif/acido/fase5(h3po4).gif";
     }
 
     else if (selectAcido.value == "CH₃COOH") {
-        fase5El.src = "./Imagens/gif/acido/fase5(ch3cooh).gif";
+        fase5El.src = "./Imagens/" + mobile + "gif/acido/fase5(ch3cooh).gif";
     }
 
     else if (selectAcido.value == "H₂CO₃") {
-        fase5El.src = "./Imagens/gif/acido/fase5(h2co3).gif";
+        fase5El.src = "./Imagens/" + mobile + "gif/acido/fase5(h2co3).gif";
     }
 }
 
@@ -240,8 +282,13 @@ image.src = 'https://piskel-imgstore-b.appspot.com/img/0f7c2d94-1117-11ed-9d47-d
             content: image,
             className: "mobile-alert",
             title: 'Por favor, vire o celular para melhor experência no programa!',
-            });
-        
+        });
+            var fase2AcidoEl = document.createElement("img");   
+            var divPrincipalEl = document.querySelector("#container");
+            var fase1El = divPrincipalEl.querySelector("#mesa");
+            divPrincipalEl.replaceChild(fase2AcidoEl, fase1El);
+            fase2AcidoEl.id = "mesa"; 
+            fase2AcidoEl.src = "./Imagens/mobile/fase1.png";
     }
 
 //exportar variaeval

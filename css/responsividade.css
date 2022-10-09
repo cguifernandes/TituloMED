@@ -3,6 +3,32 @@
         bottom: -85px;
     }
 }
+
+@media (max-height: 475px) { 
+    #container {
+        bottom: 0px !important;
+    }
+
+    #btnAcido {
+        top: 410px !important;
+    }
+
+    #btnBase{
+        top: 530px !important;
+    }
+
+    #indicador {
+        bottom: -40px !important;
+    }
+
+    .principal-mol {
+        top: 344px !important;
+    }
+
+    #container select {
+        bottom: -60px !important;
+    }
+}
  
 @media (max-height: 720px) and (max-width: 1200px) {
     #container {

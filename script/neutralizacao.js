@@ -137,7 +137,6 @@ function ClickIndicadorEl() {
     divPrincipalEl.replaceChild(fase2AcidoEl, fase1El);
 
     IndicadorEl.style.display = 'none';
-    IndicadorEl.style.visibility = ''
 
     if (!acido) {
         cmbAcido.style.display = 'inline';
@@ -162,23 +161,23 @@ function ClickIndicadorEl() {
     } 
 
     else if (!base) {
-        cmbAcido.style.display = 'inline';
-        cmbAcido.disabled = true;
-        cmbAcido.style.cursor = 'auto';
+        cmbBase.style.display = 'inline';
+        cmbBase.disabled = true;
+        cmbBase.style.cursor = 'auto';
 
         if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
             fase2AcidoEl.src = "./Imagens/mobile/gif/indicador(base).gif";
             setTimeout(function() {
-                cmbAcido.disabled = false;
-                cmbAcido.style.cursor = 'pointer';
+                cmbBase.disabled = false;
+                cmbBase.style.cursor = 'pointer';
             }, 3090);
         }
 
         else {
             fase2AcidoEl.src = "./Imagens/gif/indicador(base).gif";
             setTimeout(function() {
-                cmbAcido.disabled = false;
-                cmbAcido.style.cursor = 'pointer';
+                cmbBase.disabled = false;
+                cmbBase.style.cursor = 'pointer';
             }, 2590);
         }
     }

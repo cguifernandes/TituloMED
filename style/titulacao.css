@@ -14,18 +14,18 @@
 
 #grid-equacao {
     display: grid;
-    grid-template-columns: 170px 100px 40px 50px 20px;
+    grid-template-columns: 170px 100px 50px 70px 320px;
     padding-left: 95px;
 }
 
 #grid-titulante {
     padding-left: 278px;
     display: grid;
-    grid-template-columns: 100px 100px;
+    grid-template-columns: 100px 120px;
 }
 
 #titulante2 {
-    padding-left: 12px;
+    padding-left: 25px;
 }
 
 #grid-titulante p {

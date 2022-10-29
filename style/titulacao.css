@@ -1,10 +1,8 @@
-
 .principal h1 {
     font-size: 20px;
     color: #ffffff;
     font-weight: bold;
     padding-left: 95px;
-    margin: 25px 0px;
 }
 
 #substancia {
@@ -28,6 +26,11 @@
     padding-left: 25px;
 }
 
+#es, #mol {
+    padding-left: 95px;
+    padding-top: 10px;
+}
+
 #grid-titulante p {
     font-size: 14px;
 }
@@ -43,10 +46,13 @@
 
 .titulo {
     font-size: 28px !important;
-    padding-top: 100px;
-    padding-bottom: 50px;
+    padding: 50px 0px;
     text-align: center;
     padding-left: 0px !important;
+}
+
+.sub {
+    padding-top: 100px !important;
 }
 
 .exercicios div {

@@ -1,13 +1,14 @@
-﻿.principal {
+﻿* {
+    overflow-y: visible !important;
+}
+
+.principal {
     display: flex;
     flex-wrap: nowrap;
 }
 
 .sobre {
     width: 70%;
-}
-
-.titulo-sobre {
     padding-left: 95px;
 }
 
@@ -21,7 +22,6 @@
 .principal p {
     font-size: 16px;
     color: #ffffff;
-    padding-left: 95px;
     padding-bottom: 10px;
     text-align: justify;
     padding-right: 15px;
@@ -39,7 +39,6 @@
     font-size: 20px;
     color: #ffffff;
     font-weight: bold;
-    padding-left: 95px;
     margin: 25px 0px;
 }
 
@@ -140,14 +139,16 @@ input:-moz-placeholder {
 }
 
 @media (max-width: 960px) {
+    .sobre {
+        padding-left: 50px;
+    }
+
     .principal p {
         font-size: 14px;
-        padding-left: 50px;
     }
 
     .principal h1 {
         font-size: 18px;
-        padding-left: 50px;
     }
 
     .titulo {

@@ -74,30 +74,29 @@ var count = 1;
 MolEl.innerHTML = "0.1 mol/L"
     function maisEl(aumentar) {
     count = aumentar?count+1:count-1;
-        if (count > 30)
-        {
-            count--;
-        }
-        else if (count == 0){
-            count++;
-        } 
-        MolEl.innerHTML = count / 10 + " mol/L"
-        if (count == 10) {
-            MolEl.innerHTML = "1.0 mol/L"
-        }
+    if (count > 30)
+    {
+        count--;
+    }
+    else if (count == 0){
+        count++;
+    } 
+    MolEl.innerHTML = count / 10 + " mol/L"
+    if (count == 10) {
+        MolEl.innerHTML = "1.0 mol/L"
+    }
 
-        if (count == 20) {
-            MolEl.innerHTML = "2.0 mol/L"
-        }
+    if (count == 20) {
+        MolEl.innerHTML = "2.0 mol/L"
+    }
 
-        if (count == 30) {
-            MolEl.innerHTML = "3.0 mol/L"
-        }
-
+    if (count == 30) {
+        MolEl.innerHTML = "3.0 mol/L"
+    }
 }
 //BOTAO VOLTAR
 function ReiniciarEl() {
-        location.reload();
+    location.reload();
 }
 
 
@@ -288,12 +287,13 @@ image.src = 'https://piskel-imgstore-b.appspot.com/img/0f7c2d94-1117-11ed-9d47-d
             divPrincipalEl.replaceChild(fase2AcidoEl, fase1El);
             fase2AcidoEl.id = "mesa"; 
             fase2AcidoEl.src = "./Imagens/mobile/fase1.png";
-    }
+}
 
 //exportar variaeval
 var btnTitulacao = document.querySelector('#a-titulacao');
 btnTitulacao.addEventListener("click", (e) => {
     e.preventDefault();
+
 
     var selectBase = document.getElementById('cmbBase')
     var selectAcido = document.getElementById('cmbAcido')   
@@ -303,11 +303,11 @@ btnTitulacao.addEventListener("click", (e) => {
     })
 
     if (!acido) {
-        window.location = "./pages/titulacao.html?substancia=" + selectAcido.value;
+        window.location = "./pages/titulacao.html?substancia=" + selectAcido.value + "&mol=" + count / 10;
     }
 
     else {
-        window.location = "./pages/titulacao.html?substancia=" + selectBase.value;
+        window.location = "./pages/titulacao.html?substancia=" + selectBase.value + count;
     }
 })
 

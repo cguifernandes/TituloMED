@@ -19,11 +19,11 @@ var btnAcidoEl = document.getElementById("btnAcido");
             fase2AcidoEl.id = "mesa";
 
             if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-                fase2AcidoEl.src = "../Imagens/mobile/fase2(acido).png";
+                fase2AcidoEl.src = "./Imagens/mobile/fase2(acido).png";
             }
 
             else {
-                fase2AcidoEl.src = "../Imagens/fase2(acido).png";
+                fase2AcidoEl.src = "./Imagens/fase2(acido).png";
             }
         }
 
@@ -49,11 +49,11 @@ var btnBaseEl = document.getElementById("btnBase");
             fase2AcidoEl.id = "mesa";
 
             if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-                fase2AcidoEl.src = "../Imagens/mobile/fase2(base).png";
+                fase2AcidoEl.src = "./Imagens/mobile/fase2(base).png";
             }
 
             else {
-                fase2AcidoEl.src = "../Imagens/fase2(base).png";
+                fase2AcidoEl.src = "./Imagens/fase2(base).png";
             }
         }
         
@@ -143,7 +143,7 @@ function ClickIndicadorEl() {
         cmbAcido.style.cursor = 'auto';
 
         if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-            fase2AcidoEl.src = "../Imagens/mobile/gif/indicador(acido).gif";
+            fase2AcidoEl.src = "./Imagens/mobile/gif/indicador(acido).gif";
             setTimeout(function() {
                 cmbAcido.disabled = false;
                 cmbAcido.style.cursor = 'pointer';
@@ -151,7 +151,7 @@ function ClickIndicadorEl() {
         }
 
         else {
-            fase2AcidoEl.src = "../Imagens/gif/indicador(acido).gif";
+            fase2AcidoEl.src = "./Imagens/gif/indicador(acido).gif";
             setTimeout(function() {
                 cmbAcido.disabled = false;
                 cmbAcido.style.cursor = 'pointer';
@@ -165,7 +165,7 @@ function ClickIndicadorEl() {
         cmbBase.style.cursor = 'auto';
 
         if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-            fase2AcidoEl.src = "../Imagens/mobile/gif/indicador(base).gif";
+            fase2AcidoEl.src = "./Imagens/mobile/gif/indicador(base).gif";
             setTimeout(function() {
                 cmbBase.disabled = false;
                 cmbBase.style.cursor = 'pointer';
@@ -173,7 +173,7 @@ function ClickIndicadorEl() {
         }
 
         else {
-            fase2AcidoEl.src = "../Imagens/gif/indicador(base).gif";
+            fase2AcidoEl.src = "./Imagens/gif/indicador(base).gif";
             setTimeout(function() {
                 cmbBase.disabled = false;
                 cmbBase.style.cursor = 'pointer';
@@ -207,27 +207,27 @@ function valorBase(selectBase) {
     }
     
     if (selectBase.value == "NaOH") {
-        fase5El.src = "../Imagens/" + mobile + "gif/base/fase5(naoh).gif";
+        fase5El.src = "./Imagens/" + mobile + "gif/base/fase5(naoh).gif";
     }
 
     else if (selectBase.value == "KOH") {
-        fase5El.src = "../Imagens/" + mobile + "gif/base/fase5(koh).gif";
+        fase5El.src = "./Imagens/" + mobile + "gif/base/fase5(koh).gif";
     }
 
     else if (selectBase.value == "NH₄OH") {
-        fase5El.src = "../Imagens/" + mobile + "gif/base/fase5(nh4oh).gif";
+        fase5El.src = "./Imagens/" + mobile + "gif/base/fase5(nh4oh).gif";
     }
 
     else if (selectBase.value == "AgOH") {
-        fase5El.src = "../Imagens/" + mobile + "gif/base/fase5(agoh).gif";
+        fase5El.src = "./Imagens/" + mobile + "gif/base/fase5(agoh).gif";
     }
 
     else if (selectBase.value == "Mg(OH)₂") {
-        fase5El.src = "../Imagens/" + mobile + "gif/base/fase5(mgoh2).gif";
+        fase5El.src = "./Imagens/" + mobile + "gif/base/fase5(mgoh2).gif";
     }
 
     else if (selectBase.value == "Ca(OH)₂") {
-        fase5El.src = "../Imagens/" + mobile + "gif/base/fase5(caoh).gif";
+        fase5El.src = "./Imagens/" + mobile + "gif/base/fase5(caoh).gif";
     }
 }
 
@@ -245,27 +245,27 @@ function valorAcido(selectAcido) {
     }
 
     if (selectAcido.value == "HCl") {
-        fase5El.src = "../Imagens/" + mobile + "gif/acido/fase5(hcl).gif";
+        fase5El.src = "./Imagens/" + mobile + "gif/acido/fase5(hcl).gif";
     }
 
     else if (selectAcido.value == "H₂SO₄") {
-        fase5El.src = "../Imagens/" + mobile + "gif/acido/fase5(h2so4).gif";
+        fase5El.src = "./Imagens/" + mobile + "gif/acido/fase5(h2so4).gif";
     }
 
     else if (selectAcido.value == "HNO₃") {
-        fase5El.src = "../Imagens/" + mobile + "gif/acido/fase5(hno3).gif";
+        fase5El.src = "./Imagens/" + mobile + "gif/acido/fase5(hno3).gif";
     }
 
     else if (selectAcido.value == "H₃PO₄") {
-        fase5El.src = "../Imagens/" + mobile + "gif/acido/fase5(h3po4).gif";
+        fase5El.src = "./Imagens/" + mobile + "gif/acido/fase5(h3po4).gif";
     }
 
     else if (selectAcido.value == "CH₃COOH") {
-        fase5El.src = "../Imagens/" + mobile + "gif/acido/fase5(ch3cooh).gif";
+        fase5El.src = "./Imagens/" + mobile + "gif/acido/fase5(ch3cooh).gif";
     }
 
     else if (selectAcido.value == "H₂CO₃") {
-        fase5El.src = "../Imagens/" + mobile + "gif/acido/fase5(h2co3).gif";
+        fase5El.src = "./Imagens/" + mobile + "gif/acido/fase5(h2co3).gif";
     }
 }
 
@@ -286,7 +286,7 @@ image.src = 'https://piskel-imgstore-b.appspot.com/img/0f7c2d94-1117-11ed-9d47-d
             var fase1El = divPrincipalEl.querySelector("#mesa");
             divPrincipalEl.replaceChild(fase2AcidoEl, fase1El);
             fase2AcidoEl.id = "mesa"; 
-            fase2AcidoEl.src = "../Imagens/mobile/fase1.png";
+            fase2AcidoEl.src = "./Imagens/mobile/fase1.png";
 }
 
 //exportar variaeval
@@ -303,11 +303,11 @@ btnTitulacao.addEventListener("click", (e) => {
     })
 
     if (!acido) {
-        window.location = "../pages/titulacao.html?substancia=" + selectAcido.value + "&mol=" + count / 10;
+        window.location = "./pages/titulacao.html?substancia=" + selectAcido.value + "&mol=" + count / 10;
     }
 
     else {
-        window.location = "../pages/titulacao.html?substancia=" + selectBase.value + count;
+        window.location = "./pages/titulacao.html?substancia=" + selectBase.value + count;
     }
 })
 

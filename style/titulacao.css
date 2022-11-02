@@ -1,0 +1,86 @@
+.principal h1 {
+    font-size: 20px;
+    color: #ffffff;
+    font-weight: bold;
+    padding-left: 95px;
+}
+
+#substancia {
+    padding-left: 248px;
+    font-size: 14px;
+}
+
+#grid-equacao {
+    display: grid;
+    grid-template-columns: 170px 100px 50px 70px 320px;
+    padding-left: 95px;
+}
+
+#grid-titulante {
+    padding-left: 278px;
+    display: grid;
+    grid-template-columns: 100px 120px;
+}
+
+#titulante2 {
+    padding-left: 25px;
+}
+
+#es, #mol {
+    padding-left: 95px;
+    padding-top: 10px;
+}
+
+#grid-titulante p {
+    font-size: 14px;
+}
+
+#analito, #titulante, p2, p4 {
+    color: #fff;
+}
+
+.principal p {
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.titulo {
+    font-size: 28px !important;
+    padding: 50px 0px;
+    text-align: center;
+    padding-left: 0px !important;
+}
+
+.sub {
+    padding-top: 100px !important;
+}
+
+.exercicios div {
+    color: #fff;
+    padding: 0px 95px;
+}
+
+.exercicios {
+    padding-bottom: 200px;
+}
+
+.custom-shape-divider-top-1658081412 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    z-index: -10;
+}
+
+.custom-shape-divider-top-1658081412 svg {
+    position: relative;
+    display: block;
+    width: calc(136% + 210.3px);
+    height: 201px;
+}
+
+.custom-shape-divider-top-1658081412 .shape-fill {
+    fill: #19273A;
+}

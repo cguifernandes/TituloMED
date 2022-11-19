@@ -20,7 +20,7 @@ window.onload = function () {
 
     let path = window.location.href.split('=');
 
-    Mol.innerHTML += " Mol do titulante = " + path[2] + " mol/L"; 
+    Mol.innerHTML += " Concentração molar do titulante = " + path[2] + " mol/L"; 
 
     if (path[1].split("&")[0] == "NaOH") {
         Analito.innerHTML += "NaOH"

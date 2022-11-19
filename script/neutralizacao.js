@@ -307,7 +307,7 @@ btnTitulacao.addEventListener("click", (e) => {
     }
 
     else {
-        window.location = "./pages/titulacao.html?substancia=" + selectBase.value + count;
+        window.location = "./pages/titulacao.html?substancia=" + selectAcido.value + "&mol=" + count / 10;
     }
 })
 

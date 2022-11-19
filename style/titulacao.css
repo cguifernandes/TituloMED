@@ -1,19 +1,45 @@
 .principal h1 {
     font-size: 20px;
     color: #ffffff;
-    font-weight: bold;
     padding-left: 95px;
 }
 
+.padding {
+    padding: 0px 95px;
+}
+
 #substancia {
-    padding-left: 248px;
+    padding-left: 200px;
+    padding-top: 10px;
     font-size: 14px;
+    grid-column-start: 1;
+    grid-column-end: 6;
+}
+
+h3 {
+    text-align: center;
+    color: #ffffff;
+}
+
+.calculo {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 50% 35%;
+    grid-template-rows: 50px 50px 50px;
+} 
+
+#molar, #volume, #ene {
+    grid-column-start: 2;
+}
+
+#formula {
+    grid-row-start: 2;
+    padding-right: 20px;
 }
 
 #grid-equacao {
     display: grid;
     grid-template-columns: 170px 100px 50px 70px 320px;
-    padding-left: 95px;
 }
 
 #grid-titulante {
@@ -24,11 +50,6 @@
 
 #titulante2 {
     padding-left: 25px;
-}
-
-#es, #mol {
-    padding-left: 95px;
-    padding-top: 10px;
 }
 
 #grid-titulante p {
@@ -42,6 +63,17 @@
 .principal p {
     font-size: 16px;
     color: #ffffff;
+}
+
+.text {
+    display: grid;
+    grid-template-columns: 35% 35%;
+    padding-bottom: 15px;
+}
+
+.text p {
+    padding-top: 10px;
+    padding-right: 20px;
 }
 
 .titulo {

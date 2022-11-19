@@ -13,7 +13,7 @@
 <body>
     <div id="mySidebar" class="sidebar">
         <a id="link" href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="./index.html" id="neutralizacao">Neutralização</a>
+        <a href="../index.html" id="neutralizacao">Neutralização</a>
         <a href="../pages/sobre.html">Sobre</a>
         <img src="../Imagens/icon.png" id="imagem" ></img>
     </div>
@@ -30,24 +30,37 @@
         </svg>
     </div>
     <div class="principal">
-        <div class="substancia">
-            <h1 class="titulo sub">Substância</h1>
-            <div id="grid-titulante">
-                <p>Analito</p>
-                <p id="titulante2">Titulante</p>
+        <div class="padding">
+            <div class="substancia">
+                <h1 class="titulo sub">Titulação</h1>
+                <div id="grid-titulante">
+                    <p>Analito</p>
+                    <p id="titulante2">Titulante</p>
+                </div>
+                <div id="grid-equacao">
+                    <p id="p-equacao">Equação da reação: </p>
+                    <p1 id="analito"></p1>
+                    <p2>+</p2>
+                    <p3 id="titulante"></p3>
+                    <p4 id="equacao"> -> </p4>
+                    <p id="substancia"></p>
+                </div>
+                <h3>Dados</h3>
+                <div class="text">
+                    <p id="es">Concentração molar do titulado = Desconhecida</p>
+                    <p>Volume do titulado = 250 mL</p>
+                    <p id="mol"></p>
+                    <p>Volume do titulante = 100 mL</p>
+                </div>
+                <h3>Fórmula</h3>
+                <div class="calculo">
+                    <p id="formula">Fórmula usada para achar a concentração molar do titulado: M = n ÷ V</p>
+                    <p id="molar">M = mol/L (o que será achado).</p>
+                    <p id="volume">V = Volume do titulado (deve ser passado para Litros).</p>
+                    <p id="ene">n = perguntar para a profesora</p>
+                </div>
             </div>
-            <div id="grid-equacao">
-                <p id="p-equacao">Equação da reação: </p>
-                <p1 id="analito"></p1>
-                <p2>+</p2>
-                <p3 id="titulante"></p3>
-                <p4 id="equacao"> -> </p4>
-            </div>
-            <p id="substancia"></p>
-            <p id="es">Mol do titulado = 1.0 mol/L</p>
-            <p id="mol"></p>
         </div>
-
         <div class="exercicios">
             <h1 class="titulo">Exercícios</h1>
                 <div>oip</div>

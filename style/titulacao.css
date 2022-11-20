@@ -1,3 +1,7 @@
+html {
+    overflow-y: auto;
+}
+
 .principal h1 {
     font-size: 20px;
     color: #ffffff;
@@ -11,6 +15,7 @@
 #substancia {
     padding-left: 200px;
     padding-top: 10px;
+    padding-bottom: 5px;
     font-size: 14px;
     grid-column-start: 1;
     grid-column-end: 6;
@@ -21,7 +26,7 @@ h3 {
     color: #ffffff;
 }
 
-.calculo {
+.formula {
     display: grid;
     align-items: center;
     grid-template-columns: 50% 35%;
@@ -93,7 +98,7 @@ h3 {
 }
 
 .exercicios {
-    padding-bottom: 200px;
+    padding: 120px 0px;
 }
 
 .custom-shape-divider-top-1658081412 {

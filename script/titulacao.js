@@ -5,6 +5,7 @@ var GridTitulante = document.querySelector("#grid-titulante");
 var Titulante2 = document.querySelector("#titulante2");
 var Equacao = document.querySelector("#equacao");
 var Mol = document.querySelector("#mol");
+var Dados = document.querySelector("#dados");
 
 function openNav() {
     document.getElementById("mySidebar").style.width = "250px";
@@ -20,7 +21,8 @@ window.onload = function () {
 
     let path = window.location.href.split('=');
 
-    Mol.innerHTML += " Concentração molar do titulante = " + path[2] + " mol/L"; 
+    Mol.innerHTML += "Concentração molar do titulante = " + path[2] + " mol/L"; 
+    Dados.innerHTML += "M = " + path[2] + " ÷ " + path[1].split("&")[0]
 
     if (path[1].split("&")[0] == "NaOH") {
         Analito.innerHTML += "NaOH"

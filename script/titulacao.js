@@ -22,7 +22,7 @@ window.onload = function () {
     let path = window.location.href.split('=');
 
     Mol.innerHTML += "Concentração molar do titulante = " + path[2] + " mol/L"; 
-    
+    Dados.innerHTML += "M = " + path[2] + " ÷ " + "0.25"
 
     if (path[1].split("&")[0] == "NaOH") {
         Analito.innerHTML += "NaOH"
@@ -30,7 +30,6 @@ window.onload = function () {
         Titulante.innerHTML += "HNO₃"
         Equacao.innerHTML += "NaNO₃ + H₂O"
         Substancia.innerHTML += "Hidróxido de Sódio + Ácido Nítrico"
-        Dados.innerHTML += "M = " + path[2] + " ÷ " + "NaOH"
     }
 
     else if (path[1].split("&")[0] == "KOH") {
@@ -42,7 +41,6 @@ window.onload = function () {
         Titulante.innerHTML += "HNO₃"
         Equacao.innerHTML += "KNO₃ + H₂O"
         Substancia.innerHTML += "Hidróxido de Potássio + Ácido Nítrico"
-        Dados.innerHTML += "M = " + path[2] + " ÷ " + "KOH"
     }
 
     else if (path[1].split("&")[0] == "NH%E2%82%84OH") {
@@ -53,7 +51,6 @@ window.onload = function () {
         Titulante.innerHTML += "HNO₃"
         Equacao.innerHTML += "NH₄NO₃ + H₂O"
         Substancia.innerHTML += "Hidróxido de Amônio + Ácido Nítrico"
-        Dados.innerHTML += "M = " + path[2] + " ÷ " + "NH₄OH"
     }
     
     else if (path[1].split("&")[0] == "AgOH") {
@@ -64,7 +61,6 @@ window.onload = function () {
         Titulante.innerHTML += "HNO₃"
         Equacao.innerHTML += "AgNO₃ + H₂O"
         Substancia.innerHTML += "Hidróxido de Prata + Ácido Nítrico"
-        Dados.innerHTML += "M = " + path[2] + " ÷ " + "AgOH"
     }
 
     else if (path[1].split("&")[0] == "Mg(OH)%E2%82%82") {
@@ -75,7 +71,6 @@ window.onload = function () {
         Titulante.innerHTML += "HNO₃"
         Equacao.innerHTML += "MgNO₃ + H₂O"
         Substancia.innerHTML += "Hidróxido de Magnésio + Ácido Nítrico"
-        Dados.innerHTML += "M = " + path[2] + " ÷ " + "Mg(OH)₂"
     }
     
     else if (path[1].split("&")[0] == "Ca(OH)%E2%82%82") {
@@ -85,7 +80,6 @@ window.onload = function () {
         Titulante.innerHTML += "HNO₃"
         Equacao.innerHTML += "CaNO₃ + H₂O"
         Substancia.innerHTML += "Hidróxido de Cálcio + Ácido Nítrico"
-        Dados.innerHTML += "M = " + path[2] + " ÷ " + "Ca(OH)₂"
     }
 
     else if (path[1].split("&")[0] == "HCl") {
@@ -95,7 +89,6 @@ window.onload = function () {
         Titulante.innerHTML = "KOH";
         Equacao.innerHTML += "KCl + H₂O"
         Substancia.innerHTML += "Ácido Clorídrico + Hidróxido de Potássio"
-        Dados.innerHTML += "M = " + path[2] + " ÷ " + "HCl"
     }
 
     else if (path[1].split("&")[0] == "H%E2%82%82SO%E2%82%84") {
@@ -104,7 +97,6 @@ window.onload = function () {
         Titulante.innerHTML += "KOH"
         Equacao.innerHTML += "K₂SO₄ + H₂O"
         Substancia.innerHTML += "Ácido Sulfúrico + Hidróxido de Potássio"
-        Dados.innerHTML += "M = " + path[2] + " ÷ " + "H₂SO₄"
     }
 
     else if (path[1].split("&")[0] == "HNO%E2%82%83") {
@@ -113,7 +105,6 @@ window.onload = function () {
         Titulante.innerHTML += "KOH"
         Equacao.innerHTML += "KNO₃ + H₂O"
         Substancia.innerHTML += "Ácido Nítrico + Hidróxido de Potássio"
-        Dados.innerHTML += "M = " + path[2] + " ÷ " + "HNO₃"
     }
 
     else if (path[1].split("&")[0] == "H%E2%82%83PO%E2%82%84") {
@@ -122,7 +113,6 @@ window.onload = function () {
         Titulante.innerHTML += "KOH"
         Equacao.innerHTML += "K₃PO₄ + H₂O"
         Substancia.innerHTML += "Ácido Fosfórico + Hidróxido de Potássio"
-        Dados.innerHTML += "M = " + path[2] + " ÷ " + "H₃PO₄"
     }
 
     else if (path[1].split("&")[0] == "CH%E2%82%83COOH") {
@@ -130,7 +120,6 @@ window.onload = function () {
         Titulante.innerHTML += "KOH"
         Equacao.innerHTML += "CH₃COOK + H₂O"
         Substancia.innerHTML += "Ácido Acético + Hidróxido de Potássio"
-        Dados.innerHTML += "M = " + path[2] + " ÷ " + "CH₃COOH"
     }
     
     else if (path[1].split("&")[0] == "H%E2%82%82CO%E2%82%83") {
@@ -139,7 +128,6 @@ window.onload = function () {
         Titulante.innerHTML += "KOH"
         Equacao.innerHTML += "K₂CO₃ + H₂O"
         Substancia.innerHTML += "Ácido Carbônico + Hidróxido de Potássio"
-        Dados.innerHTML += "M = " + path[2] + " ÷ " + "H₂CO₃"
     }
 
     else {

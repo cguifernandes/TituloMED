@@ -12,6 +12,10 @@
     padding-left: 95px;
 }
 
+.sobre p {
+    text-align: left;
+}
+
 .contato {
     width: 40%;
     padding-left: 50px;

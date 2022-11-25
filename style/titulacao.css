@@ -13,12 +13,12 @@ html {
 }
 
 #substancia {
-    padding-left: 200px;
+    padding-left: 160px;
     padding-top: 10px;
-    padding-bottom: 5px;
+    padding-bottom: 10px;
     font-size: 14px;
     grid-column-start: 1;
-    grid-column-end: 6;
+    grid-column-end: 3;
 }
 
 h3 {
@@ -29,7 +29,7 @@ h3 {
 .formula {
     display: grid;
     align-items: center;
-    grid-template-columns: 50% 35%;
+    grid-template-columns: 50% 50%;
     grid-template-rows: 50px 50px 50px;
 } 
 
@@ -44,17 +44,28 @@ h3 {
 
 #grid-equacao {
     display: grid;
-    grid-template-columns: 170px 100px 50px 70px 320px;
+    grid-template-columns: 160px 400px;
+    grid-template-rows: auto auto auto;
+}
+
+#equacao {
+    padding-left: 10px;
 }
 
 #grid-titulante {
-    padding-left: 278px;
     display: grid;
-    grid-template-columns: 100px 120px;
+    padding-left: 165px;
+    grid-template-columns: 60px 280px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+#p-equacao {
+    grid-row-start: 2;
 }
 
 #titulante2 {
-    padding-left: 25px;
+    padding-left: 35px;
 }
 
 #grid-titulante p {
@@ -68,6 +79,14 @@ h3 {
 .principal p {
     font-size: 16px;
     color: #ffffff;
+}
+
+#div-substancia {
+    grid-row-start: 2;
+}
+
+#div-substancia p1, p2, p3 {
+    padding: 0px 10px !important;
 }
 
 .text {
@@ -86,6 +105,12 @@ h3 {
     padding: 50px 0px;
     text-align: center;
     padding-left: 0px !important;
+}
+
+.calculo {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: 10px 0px;
 }
 
 .sub {
@@ -121,3 +146,84 @@ h3 {
 .custom-shape-divider-top-1658081412 .shape-fill {
     fill: #19273A;
 }
+
+@media (max-width: 960px) {
+    .padding {
+        padding: 0px 50px;
+    }
+}
+
+@media (max-width: 720px) {
+    .text {
+        grid-template-columns: 100%;
+    }
+
+    .text p {
+        padding-right: 0px;
+    }
+
+    .formula {
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+    }
+
+    .formula p { 
+        padding-top: 10px;
+    }
+
+    .formula {
+        margin-bottom: 15px;
+    }
+
+    #molar, #volume, #ene {
+        grid-column-start: 1 !important;
+    }
+
+    .calculo {
+        grid-template-columns: 100%;
+    }
+
+    .calculo p {
+        padding-top: 10px;
+    }
+}
+
+@media (max-width: 610px) {
+    #grid-equacao {
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto auto auto;
+    }
+
+    #p-equacao {
+        grid-row: 1;
+    }
+
+    #div-substancia {
+        padding-top: 0px !important;
+        grid-row: 3;
+        padding: 0px;
+        padding-top: 10px;
+    }
+
+    #substancia {
+        grid-row: 4;
+        padding-left: 0px;
+        padding: 5px 0px!important;
+    }
+
+    #div-substancia p1, p2, p3 {
+        padding: 0px !important;
+        padding-right: 10px !important;
+    }
+
+    #grid-titulante {
+        padding: 5px 0px!important;
+        grid-row: 2;
+        padding: 0;
+    }
+
+    #titulante2 {
+        padding-left: 15px !important;
+    }
+}
+

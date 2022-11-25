@@ -33,16 +33,19 @@
         <div class="padding">
             <div class="substancia">
                 <h1 class="titulo sub">Titulação</h1>
-                <div id="grid-titulante">
-                    <p>Analito</p>
-                    <p id="titulante2">Titulante</p>
-                </div>
+
                 <div id="grid-equacao">
+                    <div id="grid-titulante">
+                        <p>Analito</p>
+                        <p id="titulante2">Titulante</p>
+                    </div>
                     <p id="p-equacao">Equação da reação: </p>
-                    <p1 id="analito"></p1>
-                    <p2>+</p2>
-                    <p3 id="titulante"></p3>
-                    <p4 id="equacao"> -> </p4>
+                    <div id="div-substancia">
+                        <p1 id="analito"></p1>
+                        <p2>+</p2>
+                        <p3 id="titulante"></p3>
+                        <p4 id="equacao"> -> </p4>
+                    </div>
                     <p id="substancia"></p>
                 </div>
                 <h3>Dados</h3>
@@ -61,8 +64,8 @@
                 </div>
                 <h3>Cálculo</h3>
                 <div class="calculo">
-                    <p>M = n ÷ V </p>
-                    <p id="dados"></p>
+                    <p>M = n ÷ V -> <span id="dados"></span></p>
+                    <p id="resultado">teste</p>
                 </div>
             </div>
         </div>

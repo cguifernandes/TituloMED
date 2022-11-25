@@ -139,45 +139,45 @@ function ClickIndicadorEl() {
 
     if (!acido) {
         cmbAcido.style.display = 'inline';
-        cmbAcido.disabled = true;
+        //cmbAcido.disabled = true;
         cmbAcido.style.cursor = 'auto';
 
         if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
             fase2AcidoEl.src = "./Imagens/mobile/gif/indicador(acido).gif";
-            setTimeout(function() {
-                cmbAcido.disabled = false;
-                cmbAcido.style.cursor = 'pointer';
-            }, 3090);
+            // setTimeout(function() {
+            //     cmbAcido.disabled = false;
+            //     cmbAcido.style.cursor = 'pointer';
+            // }, 3090);
         }
 
         else {
             fase2AcidoEl.src = "./Imagens/gif/indicador(acido).gif";
-            setTimeout(function() {
-                cmbAcido.disabled = false;
-                cmbAcido.style.cursor = 'pointer';
-            }, 2590);
+            // setTimeout(function() {
+            //     cmbAcido.disabled = false;
+            //     cmbAcido.style.cursor = 'pointer';
+            // }, 2590);
         }
     } 
 
     else if (!base) {
         cmbBase.style.display = 'inline';
-        cmbBase.disabled = true;
+        // cmbBase.disabled = true;
         cmbBase.style.cursor = 'auto';
 
         if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
             fase2AcidoEl.src = "./Imagens/mobile/gif/indicador(base).gif";
-            setTimeout(function() {
-                cmbBase.disabled = false;
-                cmbBase.style.cursor = 'pointer';
-            }, 3090);
+            // setTimeout(function() {
+            //     cmbBase.disabled = false;
+            //     cmbBase.style.cursor = 'pointer';
+            // }, 3090);
         }
 
         else {
             fase2AcidoEl.src = "./Imagens/gif/indicador(base).gif";
-            setTimeout(function() {
-                cmbBase.disabled = false;
-                cmbBase.style.cursor = 'pointer';
-            }, 2590);
+            // setTimeout(function() {
+            //     cmbBase.disabled = false;
+            //     cmbBase.style.cursor = 'pointer';
+            // }, 2590);
         }
     }
 }

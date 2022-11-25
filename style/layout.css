@@ -1,5 +1,4 @@
 ﻿* {
-    font-family: "Microsoft YaHei";
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
@@ -7,7 +6,10 @@
     overflow-x: hidden;
 }
 
+@import url('https://fonts.cdnfonts.com/css/microsoft-yahei');  
+
 body {
+    font-family: 'Microsoft YaHei', sans-serif;
     background-color: #243b5a
 }
 

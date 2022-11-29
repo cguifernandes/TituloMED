@@ -201,7 +201,7 @@ h3 {
     }
 
     #molar, #volume, #ene {
-        grid-column-start: 1 !important;
+        grid-column: 1 !important;
     }
 
     .calculo {
@@ -210,6 +210,10 @@ h3 {
 
     .calculo p {
         padding-top: 10px;
+    }
+
+    #resultado1 {
+        grid-row: 2;
     }
 }
 

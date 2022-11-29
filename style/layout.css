@@ -10,7 +10,7 @@
 
 body {
     font-family: 'Microsoft YaHei', sans-serif;
-    background-color: #243b5a
+    background-color: #243b5a;
 }
 
 #imagem {
@@ -20,7 +20,7 @@ body {
     position: absolute;
 }
 
-#next{
+#next {
     margin-left: 35px;
     display: inline-block;
 }

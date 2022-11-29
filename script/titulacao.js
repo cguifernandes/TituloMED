@@ -8,6 +8,11 @@ var Equacao = document.querySelector("#equacao");
 var Mol = document.querySelector("#mol");
 var Dados = document.querySelector("#dados");
 var Resultado = document.querySelector("#resultado");
+var Balancear = document.querySelector("#balancear");
+var Calculo1 = document.querySelector("#calculo1");
+var Resultado1 = document.querySelector("#resultado1");
+var Calculo2 = document.querySelector("#calculo2");
+var Resultado2 = document.querySelector("#resultado2");
 
 function openNav() {
     document.getElementById("mySidebar").style.width = "250px";
@@ -19,11 +24,28 @@ function closeNav() {
     document.getElementById("main").style.marginRight = "0";
 }
 
+Balancear.onclick = function () {
+    Equacao.innerHTML = "(CaNO₃)₂ + 2H₂O"
+    Titulante.innerHTML = "2(HNO₃)"
+    Titulante2.style.paddingLeft = "55px"
+    GridTitulate.style.paddingLeft = "175px"
+}
+
+
 window.onload = function () {
 
     let path = window.location.href.split('=');
 
+    var Conta1 = path[2] * 0.1;
+    var Conta2 = path[2] / 0.1;
+
     Mol.innerHTML += "Concentração molar do titulante = " + path[2] + " mol/L"
+
+    Calculo1.innerHTML += path[2] + " = X ÷ 0.1 ";
+    Resultado1.innerHTML += "X = " + path[2] + " x 0.1 -> " + "X = " + Conta1.toFixed(2) + " mol/L"
+    
+    Calculo2.innerHTML += "X = " + path[2] + " ÷ 0.1 (Fórmula para descobrir a concentração do titulado)."
+    Resultado2.innerHTML += "X = " + path[2] + " ÷ 0.1 -> " + "X = " + Conta2.toFixed(0) + " mol/L"
 
     if (path[1].split("&")[0] == "NaOH") {
         Analito.innerHTML += "NaOH"
@@ -65,10 +87,14 @@ window.onload = function () {
     
     else if (path[1].split("&")[0] == "Ca(OH)%E2%82%82") {
         Analito.innerHTML += "Ca(OH)₂"
-        Titulante.innerHTML += "2(HNO₃)"
+        Titulante.innerHTML += "HNO₃"
         Titulante2.style.paddingLeft = "60px"
-        Equacao.innerHTML += "(CaNO₃)₂ + 2H₂O (2mol para o analito e 1 mol para o titulante"
+        Equacao.innerHTML += "CaNO₃ + H₂O"
         Substancia.innerHTML += "Hidróxido de Cálcio + Ácido Nítrico"
+        Balancear.style.display = "block";
+        
+        Calculo2.innerHTML = "X = " + "0.2" + " ÷ 0.1 (Fórmula para descobrir a concentração do titulado)."
+        Resultado2.innerHTML = "X = " + "0.2" + " ÷ 0.1 -> " + "X = " + "2 mol/L"
     }
 
     else if (path[1].split("&")[0] == "HCl") {

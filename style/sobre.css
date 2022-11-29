@@ -109,11 +109,17 @@
     width: 95px;
     height: 60px;
     background-color: transparent;
-    border: 1.5px solid rgba(255,255,255,1.0);
+    border: 2px solid rgba(255,255,255,1.0);
     cursor: pointer;
+    border-radius: 3px;
     text-align: center;
     color: #fff;
     font-size: 17px;
+    transition: 0.5s all;
+}
+
+.contato button:hover {
+    background-color: #1c2f47;
 }
 
 .contato textarea {

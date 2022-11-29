@@ -16,15 +16,6 @@
     justify-content: center;
 }
 
-#duvida-botao {
-    position: fixed;
-    right: 0.5%;
-    cursor: pointer;
-    bottom: 1%;
-    width: 42px;
-    z-index: 2;
-}
-
 #mesa {
     position: absolute;
     bottom: 0px;
@@ -219,78 +210,3 @@ input::-moz-placeholder{
     animation-duration: 0.5s;
     animation-fill-mode: forwards;
 }
-
-.video {
-    max-width: 70%;
-}
-
-#video-container {
-    display: none;
-}
-
-.p-video{
-    padding: 20px;
-    color: #3a3a3a;
-}
-
-.p-video a:visited {
-    color: #364ba8;
-}
-
-.p-video a:link {
-    color: #364ba8;
-    text-decoration: none;
-}
-
-.swal-title {
-    margin: 0px;
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.295);
-    padding-top: 0px;
-    color: rgba(0, 0, 0, 0.747);
-}
-
-.swal-footer {
-    background-color: rgba(0, 0, 0, 0.095);
-    border-top: 1px solid #e9eef1af;
-    overflow: hidden;
-    align-items: center;
-    text-align: center;
-    padding: 10px;
-    
-}
-
-.swal-text {
-    padding: 17px;
-    display: block;
-    margin: 22px;
-    text-align: center;
-    bottom: 10%;
-}
-
-.swal-button {
-    padding: 12px 20px;
-    border-radius: 2px;
-    background-color: rgba(0, 0, 0, 0.75);
-    font-size: 14px;
-}
-
-.swal-button:not([disabled]):hover {
-    background-color: rgba(0, 0, 0, 0.660);
-}
-
-.duvida-alert .swal-button--cancel {
-    color: #fff;
-}
-
-.mobile-alert .swal-title{
-    font-size: 18px;
-}
-
-.duvida-alert {
-    width: 70%;
-}
-
-.duvida-alert .swal-title{
-    font-size: 26px;
-}
-

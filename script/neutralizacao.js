@@ -111,19 +111,6 @@ function closeNav() {
     document.getElementById("main").style.marginRight = "0";
 }
 
-//DUVIDA
-var DivVideoEl = document.querySelector("#video-container");
-
-function DuvidaClickEl() {
-DivVideoEl.style.display = 'inline';
-
-swal({
-    content: DivVideoEl,
-    title: "Suas dúvidas serão resolvidas aqui!",
-    className: "duvida-alert",
-});
-}
-
 //INDICADOR
 function ClickIndicadorEl() {
     var cmbAcido = document.getElementById("cmbAcido");

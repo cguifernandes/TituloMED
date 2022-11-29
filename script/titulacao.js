@@ -24,7 +24,6 @@ window.onload = function () {
     let path = window.location.href.split('=');
 
     Mol.innerHTML += "Concentração molar do titulante = " + path[2] + " mol/L"
-    Dados.innerHTML += "M = " + path[2] + " ÷ " + "0.25"
 
     if (path[1].split("&")[0] == "NaOH") {
         Analito.innerHTML += "NaOH"
@@ -66,9 +65,9 @@ window.onload = function () {
     
     else if (path[1].split("&")[0] == "Ca(OH)%E2%82%82") {
         Analito.innerHTML += "Ca(OH)₂"
-        Titulante.innerHTML += "HNO₃"
+        Titulante.innerHTML += "2(HNO₃)"
         Titulante2.style.paddingLeft = "60px"
-        Equacao.innerHTML += "CaNO₃ + H₂O"
+        Equacao.innerHTML += "(CaNO₃)₂ + 2H₂O (2mol para o analito e 1 mol para o titulante"
         Substancia.innerHTML += "Hidróxido de Cálcio + Ácido Nítrico"
     }
 

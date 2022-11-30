@@ -37,15 +37,15 @@ window.onload = function () {
     let path = window.location.href.split('=');
 
     var Conta1 = path[2] * 0.1;
-    var Conta2 = path[2] / 0.1;
+    var Conta2 = path[2] / 0.25;
 
     Mol.innerHTML += "Concentração molar do titulante = " + path[2] + " mol/L"
 
     Calculo1.innerHTML += path[2] + " = X ÷ 0.1 ";
     Resultado1.innerHTML += "X = " + path[2] + " x 0.1 -> " + "X = " + Conta1.toFixed(2) + " mol/L"
     
-    Calculo2.innerHTML += "X = " + path[2] + " ÷ 0.1 (Fórmula para descobrir a concentração do titulado)."
-    Resultado2.innerHTML += "X = " + path[2] + " ÷ 0.1 -> " + "X = " + Conta2.toFixed(0) + " mol/L"
+    Calculo2.innerHTML += "X = " + path[2] + " ÷ 0.25 (Fórmula para descobrir a concentração do titulado)."
+    Resultado2.innerHTML += "X = " + path[2] + " ÷ 0.25 -> " + "X = " + Conta2 + " mol/L"
 
     if (path[1].split("&")[0] == "NaOH") {
         Analito.innerHTML += "NaOH"

@@ -93,8 +93,8 @@ window.onload = function () {
         Substancia.innerHTML += "Hidróxido de Cálcio + Ácido Nítrico"
         Balancear.style.display = "block";
         
-        Calculo2.innerHTML = "X = " + "0.2" + " ÷ 0.1 (Fórmula para descobrir a concentração do titulado)."
-        Resultado2.innerHTML = "X = " + "0.2" + " ÷ 0.1 -> " + "X = " + "2 mol/L"
+        Calculo2.innerHTML = "X = 0.2 ÷ 0.1 (Fórmula para descobrir a concentração do titulado)."
+        Resultado2.innerHTML = "X = 0.2 ÷ 0.25 -> X = 0.8 mol/L"
     }
 
     else if (path[1].split("&")[0] == "HCl") {
